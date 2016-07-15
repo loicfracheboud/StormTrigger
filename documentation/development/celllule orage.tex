@@ -1,0 +1,238 @@
+ \documentclass[a4paper,10pt]{article}
+ \usepackage[utf8]{inputenc}  
+ \usepackage[T1]{fontenc}
+ \usepackage{graphicx}
+ \graphicspath{{images/}} 
+ 
+ \usepackage{wrapfig} 
+ \usepackage{amsmath} 
+ \usepackage{gensymb}
+ \usepackage{fancyhdr}
+ \usepackage{lastpage}
+ \usepackage{textcomp}
+ \usepackage{color}
+ \usepackage{colortbl}
+ \usepackage[table]{xcolor}
+ \usepackage{courier}
+ \usepackage{setspace}
+ \usepackage{listings}
+ \usepackage{ulem}%
+ \usepackage{geometry}
+ \usepackage{array}
+ \usepackage{numprint}
+ \usepackage{siunitx}
+ \geometry{a4paper,
+ total = {140mm, 237mm},
+ left = 35mm,
+ top = 30mm}
+ \newcommand{\minus}{\scalebox{0.6}[1.0]{$-$}} 
+ \newcommand{\signature}[2]{%
+  \par\nobreak\bigskip
+  \begin{singlespace}%
+  \mbox{}\hfill\begin{tabular}{p{8cm} }
+      \rule{8cm}{0.5pt}\newline{}%
+        \textbf{#1}\\%
+       #2 %
+  \end{tabular}%
+  \end{singlespace}%
+  \medskip%
+ }
+ \pagestyle{fancy}
+ \fancyhead[R]{Cellule déclenchement orage}
+ \fancyfoot[C]{\thepage}
+ \fancyhead[L]{Loïc Fracheboud}
+ \author{Loïc Fracheboud}
+ \title{Cellule déclenchement orage \\ Développement \\ \Huge Storm Trigger}
+ \date{29 juin 2016}
+ \begin{document}
+ \maketitle
+
+ \begin{figure}[!h]
+ \centering
+ \vspace{80pt}
+ \includegraphics[scale=0.2]{images/signfracheboud}
+ \end{figure}
+ \pagebreak
+ 
+ \section{Introduction}
+  Le but de ce projet est de développer une cellule de déclenchement pour photographier les orages. Le concept est assez simple, il y a un capteur qui mesure la luminosité ambiante et un réglage qui permet de définir le seuil de déclenchement. Dès que le capteur détecte un changement de luminosité, un signal de déclenchement est envoyé à l'appareil photo connecté. \\
+
+ \paragraph{Accessibilité}
+ Dans l'idée de fournir une base ouverte, tout le travail est efectué avec des outils libres ou très courants, KiCAD pour la schématique/PCB, TexMaker pour la documentation, Github pour la gestion des versions, Excel pour les listes de matériel.
+Le projet est disponible à l'adresse suivante : {\itshape https://github.com/loicfracheboud/StormTrigger}
+  \begin{figure}[!h]
+ \centering
+ \vspace{5pt}
+ \includegraphics[scale=0.25]{images/signfracheboud}
+ \caption{Cliquer sur télécharger pour avoir toute la documentation nécessaire}
+ \end{figure}
+  \pagebreak
+
+  \section{Cahier des charges}
+  Le cahier des charges a été établi selon les points suivants :
+  \begin{enumerate}
+    \item Déclenchement rapide
+    \item Fonctionne sur piles/batteries AA
+    \item Résiste à l'eau
+    \item LED et buzzer pour indiquer le déclenchement, désactivables
+    \item Compatible avec la plupart des appareils photos actuels
+    \end{enumerate}  
+  
+  \section{Schéma bloc}
+  La cellule est composée des éléments suivants :  
+  
+ \begin{figure}[!h]
+ \centering
+ \includegraphics[scale=0.32]{images/signfracheboud}
+ \caption{Le schéma bloc du projet}
+ \end{figure}
+  \paragraph{Description des blocs}
+  La description détaillée est indiquée dans le chapitre suivant, ici seule une description fonctionnelle sera faite.
+  
+  \pagebreak 
+  \section{Développement}
+  Cette section traite de tous les calculs et dimensionnements de la cellule.\\
+  Pour définir la valeur des composants (notamment les résistances et condensateurs) il existe des séries de valeurs normées, on y arrondi donc presque toujours les valeurs calculées, la tolérance des composants étant suffisante pour absorber les différences. Pour plus d'infos, consultez la norme correspondante\footnote{Norme CEI60063}.\\
+  A plusieurs reprises des références sont faites au datasheets, ce sont les documents officiels que les fabricants fournissent avec leurs composants contenant toutes les informations technique nécessaire à leur mise en service. Vous pouvez les retrouver dans le répertoire approprié de la documentation.
+
+ \paragraph{Alimentation}
+ L'alimentation en énergie du système est importante. Nous avons choisi de travailler avec des piles AA (ou des batteries AA). Pour pouvoir travailler efficacement avec les ampli-ops il faut une tension plus élevée que celle de 2 piles en parallèles/séries (soit environ 1.5/3 [V] (ou 1.2/2.4 [V] pour des batteries) dans la plage de fonctionnement standard). J'ai ajouté au schéma un convertisseur DC-DC qui permet de travailler le plus efficacement possible avec des sources aussi fluctuantes que des piles. \\
+ J'ai choisi le MAX857ESA+ qui permet de travailler dès 0.8 [V] et qui assure un courant de sortie de 500 [mA]. \\
+ Pour définir la tension de sortie voulue, soit 6 [V], il faut dimensionner un pont diviseur qui donne une référence au convertisseur. Le calcul est le suivant :
+\begin{center}
+ $ R14 = R15*(\frac{Vout}{Vref}-1) = \num{10e3}*(\frac{6}{1.25}-1) = 38 [k\ohm]$
+\end{center} 
+R14 est définie à 10 [k\ohm]\footnote{Selon le datasheet du MAX857ESA+} et R15 vaudra 37.9 [k\ohm].\\
+Les piles et batteries AA sont considérées comme déchargées à partir de 0.8 [V]\footnote{Selon les datasheets de différents fabriquants de piles et batteries}, cela s'accorde bien avec le convertisseur choisi qui ne peut travailler en dessous de cette tension. Le gaspillage d'énergie sera alors minime.\\
+Les autres composants se rattachant au convertisseurs sont définis par le datasheet.\\
+Afin de fournir le 3[V] de référence, un régultateur LDO ({\itshape(Low Dropout Output)} à sortie fixe sera employé. Le modèle choisi est le NCP4586, il permet de fournir 3 [V] et 150 [mA] ce qui satisfait pleinement le fonctionnement voulu.\\
+Les valeurs des composants sont données par le datasheet.
+
+  \paragraph{Capteur}
+  Le capteur est le phototransistor NPN BPW85 avec un angle de vision de 50° et une longueur d'onde nominale de 850 [nm] (plage de 450 à 1080 [nm]). \\
+  Afin de l'alimenter, une source de courant lui sera fournie au collecteur. Cette source est composée de deux résistances et un condensateur. Les deux résistances fixent le courant et le condensateur permet d'amortir l'appel de courant lorsque le capteur entre en commutation. \\
+  Le courant It voulu pour le phototransistor en saturation est de 1 [mA]. La tension d'alimentation est de 6 [V]. Afin de charger le condensateur assez rapidement, il faut un courant de charge Ic suffisant. Définissons le à 60 [mA]. Ainsi la résistance R1 et R2 valent :
+\begin{center}
+ $ R1 = \frac{Vcc}{Ic} = \frac{6}{\num{60e-3}} = 100 [\ohm] $ \\
+ $ R2 = \frac{Vcc}{It}-R1 = \frac{6}{\num{1e-3}}-100 = 5.9 [k\ohm] $
+\end{center}
+Les deux valeurs sont parfaitements dans la série E48, pas besoin de les arrondir.
+
+\paragraph{Amplificateur}
+L'amplificateur sert à, comme son nom l'indique, amplifier le signal en provenance du capteur. Comme les variations de ce dernier sont très faible en regard de la tension d'alimentation, nous allons définir un facteur d'amplification par défaut à 500. On va placer un petit potentionmètre afin d'éventuellement faire des réglages pour les tests. Dans la version finale il n'y figurera certainement plus. \\
+Le montage choisi est un amplificateur inverseur, ce choix est fait pour que le signal de sortie soit à l'état bas au repos et à l'état haut lors de la détéction d'un éclair. \\
+L'ampli-op choisi est un TLC274. Pas de besoin très spécifique ici, le choix est plus pratique que mathématique. Dans le montage global nous avons besoin de 4 ampli-op et ce modèle existe en 4 ampli-op dans un seul boitier.
+\begin{center}
+ $ Abf = -\frac{R4}{R3} = -500 $ (sans unité)
+\end{center}
+Le signe négatif indique l'inversion de phase. \\
+Une valeur cohérente pour R3 est de 1 [k\ohm], elle facilite le calcul et est suffisamment grande pour ne pas trop influencer le montage. R4 doit valoir 500 [k\ohm], cette valeur étant en dehors des séreis standard, nous devrions la choisir au mieux. Dans notre cas, nous allons placer un potentiomètre de 100 [k\ohm]. \\
+Le condensateur d'entrée C2 permet de filtrer la composante DC qui provient du capteur et de ne conserver que les variations de ce dernier. Pas de calcul spécifique, une valeur de 220[nF] est tout-à-fait standard pour cette application. \\
+Tous ces composants sont reliés à l'entrée négative (inverseuse) de l'ampli-op et la positive est reliée à Vao = $ \frac{Vcc}{2} $, donc 3 [V].
+
+\paragraph{Filtre passe-haut}
+Afin d'éliminer les variations lentes, il faut filtrer le signal. Nous avond besoin de définir la fréquence de coupure et l'ordre du filtre, c'est-à-dire sa séléctivité. \\
+L'ordre n'a que peu d'influence dans cette cellule, un filtre de premier ordre et sa pente de 20 [dB/dec] ira très bien. \\
+La fréquence de coupure fc n'est pas non plus très importante pour capter un éclair. Ce qui est important c'est de filtrer les variation de luminosité naturelles (nuages, rayon de soleil, baisse de lueur le soir, etc). Définissons cette valeur à 100 [Hz]. La formule pour calculer cette valeur étant :
+\begin{center}
+ $ fc = \frac{1}{2*\pi*R5*C4} = 100 [Hz] $
+\end{center}
+Fixons la valeur de C3 à 220 [nF], R5 peut être calculée ainsi :
+\begin{center}
+ $ R5 = \frac{1}{2*\pi*C3*fc} = \frac{1}{2*\pi*\num{220e-9}*100} = 7.23 [k\ohm] $
+\end{center}
+R5 vaudra 7.15 [k\ohm] (en recalculant la fc on arrive à 101 [Hz], tout-à-fait acceptable). \\
+R6 et R7 donnent le gain en tension du filtre, dans ce cas (filtre 1er ordre) ça n'a pas trop d'importance, on va choisir une réponse standard, le Butterworth. Pour une réponse de ce type, le rapport entre les deux résistances $ \frac{R6}{R7} $ doit être de 0.586. Fixons R6 à 3.3 [k\ohm]
+\begin{center}
+ $ R7 = \frac{R6}{0.586} = \frac{\num{3.3e3}}{0.586} = 5.63 [k\ohm] $
+\end{center}
+R7 va donc être fixée à 5.62 [k\ohm] en E48 (valeur la plus proche dans la série normalisée).
+
+\paragraph{Filtre passe-bas}
+Pour fournir un seuil automatique qui correspond à la luminosité ambiante (hors éclairs), un filtre passe-bas est appliqué en sortie de l'amplificateur. Il est donc en parallèle avec le filtre passe-haut. \\
+Cette référence permet de ne pas re-régler le seuil trop souvent lors de conditions de luminosité difficiles, par exemple en soirée où la luminosité change beaucoup. \\
+Plaçons donc également la fréquence de coupure à 100 [Hz], les calculs ne changent pas. Seul la résistance et le condensateur d'entrée sont croisés. Nous avons R = 7.15 [k\ohm], C = 220 [nF], R = 5.62 [k\ohm] et R = 3.3 [k\ohm].\\
+Petite différence tout de même, un condensateur de 220 [nF] est placé entre la sortie de l'amplificateur et l'entrée du filtre passe-bas afin d'éliminer la composante DC du signal.
+
+\paragraph{Référence de luminosité}
+L'utilisateur a le choix entre la référence automatique ou la référence manuelle. Cette dernière est simplement un réglage de la tension de référence de l'entrée du comparateur à l'aide d'un potentiomètre.\\
+R9a (et R9b) correspondent aux deux résistances équivalentes du potentiomètre (les résistances de part et d'autre du curseur). La tension de référence est donnée par :
+\begin{center}
+ $ Vref = \frac{R8+R9a}{R8+R9+R10}*Vao $
+\end{center}
+Afin de ne pas consommer trop d'énergie, le courant qui va traverser les 3 résistance va être fixé à 60 [\micro A]. Ensuite on va fixer la référence minimale qu'on veut avoir, choisissons 0.5 [V].
+\begin{center}
+ $ R10 = \frac{Vao}{\num{60e-6}} = \frac{3}{\num{60e-6}} = 8.33 [k\ohm] $
+\end{center}
+La valeur la plus proche normalisée est 8.25 [k\ohm] (Vref min = 495 [mV]). On va maintenant définir la valeur de la référence maximale, donnons 2.8 [V].
+\begin{center}
+ $ R8 = \frac{Vao-Vref max}{\num{60e-6}} = \frac{3-2.8}{\num{60e-6}} = 3.33 [k\ohm] $
+\end{center}
+La valeur la plus proche normalisée est 3.3 [k\ohm] (Vref max = 2.8 [V]). Il reste donc à calculer la valeur du potentiomètre :
+\begin{center}
+ $ R9 = \frac{Vao}{\num{60e-6}}-R8-R10 = \frac{3}{\num{60e-6}}-\num{8.25e3}-\num{3.3e3} = 38.5 [k\ohm] $
+\end{center}
+La valeur normalisée la plus proche est 38.3 [k\ohm] (influence très faiblement le courant (60.2 [\micro A]) et donc les références (496 [mV] et 2.8 [V])).
+
+\paragraph{Comparateur}
+Ce bloc va comparer la sortie du filtre avec la référence définie par l'utilisateur (sélection entre auto ou manuel) afin de déclencher au final l'appareil photo. \\
+Il s'agit d'un montage simple, sans hysthérèse. Ce choix est fait pour augmenter au mieux la réactivité du système. Dès qu'une variation est repérée, l'étage suivant génère une pulse suffisament longue pour l'appareil. Dès lors, si le comparateur déclenche à nouveau, ce sera ignoré (et de toute façon l'appareil est déjà en train de capturer). \\
+Sur l'entrée de référence il y a un switch de sélection entre les deux références.
+
+\paragraph{Timer}
+Ce bloc va créer la pulse de déclenchement de l'appareil. \\
+Pour cela, le circuit NE555DR est tout à fait adapté. Dès le moment où il reçoit le changement d'état du comparateur, il va mettre sa sortie à l'état haut pendant un temps fixe (suffisant pour que l'appareil photo puisse le comprendre comme un déclenchement). \\
+Fixons ce temps à 300 [ms], ce qui correspond grossièrement au temps qu'une personne appuie sur son déclencheur. \\
+En mode monostable, la sortie du NE555 s'active dès la réception du signal du comparateur jusqu'au temps t voulu. Ce temps se calcule ainsi :
+\begin{center}
+ $ t = 1.1*R11*C4 $
+\end{center}
+Dans notre cas, nous voulons un temps de 300 [ms], il reste à fixer un des deux composants. Choisissons C4 (il est plus facile de trouver une résistance proche de la valeur calculée que l'inverse) à 220 [nF].
+\begin{center}
+ $ R11 = \frac{t}{1.1*C4} = \frac{\num{300e-3}}{1.1*\num{220e-9}} = 1.24 [M\ohm] $
+\end{center}
+Sur la pin {\itshape Control voltage} nous branchons simplement un condensateur de 10 [nF]. Cette pin offre un fonctionnement dont nous n'avons pas besoin.
+
+\paragraph{Déclencheur}
+Maintenant que le signal est utilisable par l'appareil photo, nous allons ajouter une petite interface de sécurité. Il s'agit d'un optocoupleur. Ce composant se comporte comme un interrupteur avec comme avantage de présenter une isolation galvanique (en moyenne 4 à 8 [kV]). Le modèle choisi est le TLP291, la LED consomme 10 [mA] ce qui en fait un choix économe énergétiquement. \\
+En sortie du Timer, un MOSFET canal N (le BSS138LT1) placé en série avec la LED et sa résistance de limitation permet d'activer l'optocoupleur. Branché au 3 [V] afin de limiter les pertes, cette résistance vaut :
+\begin{center}
+ $ Vmos = Rdson * Iled = 2.5*\num{10e-3} = 25 [mV] $ (selon datasheet, figure 9 p.4)
+ $ R12 = \frac{Vao-Vled-Vmos}{Iled} = \frac{3-1.25-\num{25e-3}}{\num{10e-3}} = 173 [\ohm] $
+\end{center}
+R12 sera une 174 [\ohm].\\
+Afin de permettre une utilisation ouverte au maximum d'appareil photo, la sortie du déclencheur est un connecteur Jack 2.5 [mm]. Ainsi, l'utilisateur n'a qu'à brancher un câble Jack 2.5 d'un côté et le connecteur adapté à son matériel de l'autre.
+
+\paragraph{Retour utilisateur}
+Pour informer l'utilisateur du déclenchement, un buzzer et une LED sont activés en même temps que l'appareil photo. Ces deux indicateurs sont désactivables indépendamment.\\
+Une LED 2 [mA] suffit, sa résistance de limitation vaut :
+\begin{center}
+ $ Vmos = Rdson * Iled = 2.5*\num{2e-3} = 4 [mV] $
+ $ R13 = \frac{Vao-Vled-Vmos}{Iled} = \frac{3-1.7-\num{4e-3}}{\num{4e-3}} = 648 [\ohm] $
+\end{center}
+R13 vaudra 649 [\ohm].\\
+Le buzzer choisi est le modèle KPEG203. Il suffit de l'alimenter entre 3 et 20 [V] et consomme 4 [mA] à 6 [V]. Afin de bien séparer les élements en sortie du timer, le buzzer est commandé par un MOSFET (le même que déjà utilisé pour les LEDs).
+
+ \pagebreak
+ \section{Conclusion}
+  C'est un projet que j'ai eu en tête après une sortie de photo d'orage avec le groupe Passion Photographie. Par hasard deux jours après, je suis tombé sur Fabrice Giroud qui avait aussi dans l'idée de se faire une cellule. Du coup nous avons mis en place un petit groupe de réflexion pour définir les points importants du projet. Ce groupe est donc consituté de moi-même, Fabrice Giroud, Guillaume Schroeter, Mathieu Arlettaz et Emmanuel Boissard.\\
+ Remerciement à .. pour l'aide
+ 
+ \begin{wrapfigure}[0]{r}{6cm}
+ \vspace{-52pt}
+ \centering
+ \includegraphics[scale=1]{signfracheboud}
+ \end{wrapfigure}
+ \signature{Loïc Fracheboud}{Sion, le 19 juin 2016} 
+ 
+  \begin{figure}[!h]
+ \centering
+ \vspace{100pt}
+ \includegraphics[scale=0.3]{images/signfracheboud}
+ \end{figure}
+ 
+ \pagebreak
+ \section{Sources, liens divers}
+ Dans cette section vous pourrez retrouver tous les liens importants du projet.
+ 
+ \end{document}
