@@ -433,7 +433,7 @@ Wire Wire Line
 Wire Wire Line
 	6350 2250 6350 2300
 Connection ~ 5350 1850
-Text Notes 5900 1300 0    60   ~ 0
+Text Notes 6150 1350 0    60   ~ 0
 Comparator
 $Comp
 L LM555N U?
@@ -810,7 +810,7 @@ Wire Wire Line
 Wire Wire Line
 	3200 3650 3200 1750
 Connection ~ 3200 1750
-Text Notes 3900 3400 0    60   ~ 0
+Text Notes 4700 4700 0    60   ~ 0
 Low-pass filter
 $Comp
 L SWITCH_INV SW?
@@ -844,7 +844,7 @@ Wire Wire Line
 	6750 3200 6750 3250
 Text Notes 5050 3400 0    60   ~ 0
 Auto threshold
-Text Notes 8100 1400 0    60   ~ 0
+Text Notes 8650 1550 0    60   ~ 0
 Timer
 $Comp
 L R_Small R13
@@ -1259,4 +1259,10 @@ Wire Wire Line
 Wire Wire Line
 	5250 6100 5250 6350
 Connection ~ 5250 6100
+Text Notes 1250 6500 0    60   ~ 0
+DC-DC converter to generate 6 [V]
+Text Notes 3900 5800 0    60   ~ 0
+Linear regulator to generate 3 [V]
+Text Notes 8850 6450 0    60   ~ 0
+User feedback (LED and buzzer)
 $EndSCHEMATC
