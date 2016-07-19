@@ -102,7 +102,7 @@ Le projet est disponible à l'adresse suivante : {\itshape https://github.com/lo
 \begin{center}
  $ R14 = R15*(\frac{Vout}{Vref}-1) = \num{10e3}*(\frac{6}{1.25}-1) = 38 [k\ohm]$
 \end{center} 
-R14 est définie à 10 [k\ohm]\footnote{Selon le datasheet du MAX857ESA+} et R15 vaudra 37.9 [k\ohm].\\
+R14 est définie à 10 [k\ohm]\footnote{Selon le datasheet du MAX857ESA+} et R15 vaudra 38.3 [k\ohm].\\
 Les piles et batteries AA sont considérées comme déchargées à partir de 0.8 [V]\footnote{Selon les datasheets de différents fabriquants de piles et batteries}, cela s'accorde bien avec le convertisseur choisi qui ne peut travailler en dessous de cette tension. Le gaspillage d'énergie sera alors minime.\\
 Les autres composants se rattachant au convertisseurs sont définis par le datasheet.\\
 Afin de fournir le 3[V] de référence, un régultateur LDO ({\itshape(Low Dropout Output)} à sortie fixe sera employé. Le modèle choisi est le NCP4586, il permet de fournir 3 [V] et 150 [mA] ce qui satisfait pleinement le fonctionnement voulu.\\
@@ -126,7 +126,7 @@ L'ampli-op choisi est un TLC274. Pas de besoin très spécifique ici, le choix e
  $ Abf = -\frac{R4}{R3} = -500 $ (sans unité)
 \end{center}
 Le signe négatif indique l'inversion de phase. \\
-Une valeur cohérente pour R3 est de 1 [k\ohm], elle facilite le calcul et est suffisamment grande pour ne pas trop influencer le montage. R4 doit valoir 500 [k\ohm], cette valeur étant en dehors des séreis standard, nous devrions la choisir au mieux. Dans notre cas, nous allons placer un potentiomètre de 100 [k\ohm]. \\
+Une valeur cohérente pour R3 est de 1 [k\ohm], elle facilite le calcul et est suffisamment grande pour ne pas trop influencer le montage. R4 doit valoir 500 [k\ohm], cette valeur étant en dehors des séries standard, nous devrions la choisir au mieux. Dans notre cas, nous allons placer un potentiomètre de 1 [M\ohm]. \\
 Le condensateur d'entrée C2 permet de filtrer la composante DC qui provient du capteur et de ne conserver que les variations de ce dernier. Pas de calcul spécifique, une valeur de 220[nF] est tout-à-fait standard pour cette application. \\
 Tous ces composants sont reliés à l'entrée négative (inverseuse) de l'ampli-op et la positive est reliée à Vao = $ \frac{Vcc}{2} $, donc 3 [V].
 
@@ -151,7 +151,7 @@ R7 va donc être fixée à 5.62 [k\ohm] en E48 (valeur la plus proche dans la s�
 \paragraph{Filtre passe-bas}
 Pour fournir un seuil automatique qui correspond à la luminosité ambiante (hors éclairs), un filtre passe-bas est appliqué en sortie de l'amplificateur. Il est donc en parallèle avec le filtre passe-haut. \\
 Cette référence permet de ne pas re-régler le seuil trop souvent lors de conditions de luminosité difficiles, par exemple en soirée où la luminosité change beaucoup. \\
-Plaçons donc également la fréquence de coupure à 100 [Hz], les calculs ne changent pas. Seul la résistance et le condensateur d'entrée sont croisés. Nous avons R = 7.15 [k\ohm], C = 220 [nF], R = 5.62 [k\ohm] et R = 3.3 [k\ohm].\\
+Plaçons donc également la fréquence de coupure à 100 [Hz], les calculs ne changent pas. Seul la résistance et le condensateur d'entrée sont croisés. Nous avons R16 = 7.15 [k\ohm], C9 = 220 [nF], R17 = 5.62 [k\ohm] et R18 = 3.3 [k\ohm].\\
 Petite différence tout de même, un condensateur de 220 [nF] est placé entre la sortie de l'amplificateur et l'entrée du filtre passe-bas afin d'éliminer la composante DC du signal.
 
 \paragraph{Référence de luminosité}

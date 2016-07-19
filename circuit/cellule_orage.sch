@@ -979,7 +979,7 @@ L R_Small R15
 U 1 1 57875A2F
 P 2850 5950
 F 0 "R15" H 2880 5970 50  0000 L CNN
-F 1 "37.9k" H 2880 5910 50  0000 L CNN
+F 1 "38.3k" H 2880 5910 50  0000 L CNN
 F 2 "" H 2850 5950 50  0000 C CNN
 F 3 "" H 2850 5950 50  0000 C CNN
 	1    2850 5950
@@ -1265,4 +1265,6 @@ Text Notes 3900 5800 0    60   ~ 0
 Linear regulator to generate 3 [V]
 Text Notes 8850 6450 0    60   ~ 0
 User feedback (LED and buzzer)
+Text Notes 1350 4750 0    60   ~ 0
+POWER ON/OFF?
 $EndSCHEMATC
