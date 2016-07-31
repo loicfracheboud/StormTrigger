@@ -63,8 +63,8 @@ Le projet est disponible à l'adresse suivante : {\itshape https://github.com/lo
   \begin{figure}[!h]
  \centering
  \vspace{5pt}
- \includegraphics[scale=0.25]{images/signfracheboud}
- \caption{Cliquer sur télécharger pour avoir toute la documentation nécessaire}
+ \includegraphics[scale=0.25]{images/git_dl}
+ \caption{Cliquer sur "Download ZIP" pour avoir toute la documentation nécessaire}
  \end{figure}
   \pagebreak
 
@@ -156,23 +156,7 @@ Petite différence tout de même, un condensateur de 220 [nF] est placé entre l
 
 \paragraph{Référence de luminosité}
 L'utilisateur a le choix entre la référence automatique ou la référence manuelle. Cette dernière est simplement un réglage de la tension de référence de l'entrée du comparateur à l'aide d'un potentiomètre.\\
-R9a (et R9b) correspondent aux deux résistances équivalentes du potentiomètre (les résistances de part et d'autre du curseur). La tension de référence est donnée par :
-\begin{center}
- $ Vref = \frac{R8+R9a}{R8+R9+R10}*Vao $
-\end{center}
-Afin de ne pas consommer trop d'énergie, le courant qui va traverser les 3 résistance va être fixé à 60 [\micro A]. Ensuite on va fixer la référence minimale qu'on veut avoir, choisissons 0.5 [V].
-\begin{center}
- $ R10 = \frac{Vao}{\num{60e-6}} = \frac{3}{\num{60e-6}} = 8.33 [k\ohm] $
-\end{center}
-La valeur la plus proche normalisée est 8.25 [k\ohm] (Vref min = 495 [mV]). On va maintenant définir la valeur de la référence maximale, donnons 2.8 [V].
-\begin{center}
- $ R8 = \frac{Vao-Vref max}{\num{60e-6}} = \frac{3-2.8}{\num{60e-6}} = 3.33 [k\ohm] $
-\end{center}
-La valeur la plus proche normalisée est 3.3 [k\ohm] (Vref max = 2.8 [V]). Il reste donc à calculer la valeur du potentiomètre :
-\begin{center}
- $ R9 = \frac{Vao}{\num{60e-6}}-R8-R10 = \frac{3}{\num{60e-6}}-\num{8.25e3}-\num{3.3e3} = 38.5 [k\ohm] $
-\end{center}
-La valeur normalisée la plus proche est 38.3 [k\ohm] (influence très faiblement le courant (60.2 [\micro A]) et donc les références (496 [mV] et 2.8 [V])).
+Il y aura donc trois résistances définissant ces références : A FINIR
 
 \paragraph{Comparateur}
 Ce bloc va comparer la sortie du filtre avec la référence définie par l'utilisateur (sélection entre auto ou manuel) afin de déclencher au final l'appareil photo. \\

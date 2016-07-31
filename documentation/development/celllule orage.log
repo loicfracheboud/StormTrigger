@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.18)  19 JUL 2016 16:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.18)  31 JUL 2016 22:29
 entering extended mode
 **"./celllule orage.tex"
 ("celllule orage.tex"
@@ -1202,11 +1202,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
-File: images/signfracheboud.png Graphic file (type png)
-<use images/signfracheboud.png>
-Package pdftex.def Info: images/signfracheboud.png used on input line 66.
-(pdftex.def)             Requested size: 23.52533pt x 9.03372pt.
- [2]
+<images/git_dl.jpg, id=12, 1064.97874pt x 658.46pt>
+File: images/git_dl.jpg Graphic file (type jpg)
+ <use images/git_dl.jpg>
+Package pdftex.def Info: images/git_dl.jpg used on input line 66.
+(pdftex.def)             Requested size: 266.24403pt x 164.6146pt.
+
+[2 <./images/git_dl.jpg>]
 File: images/signfracheboud.png Graphic file (type png)
  <use images/signfracheboud.png>
 Package pdftex.def Info: images/signfracheboud.png used on input line 86.
@@ -1217,30 +1219,30 @@ Overfull \hbox (15.86583pt too wide) in paragraph at lines 112--115
  est de 1 [mA]. La ten-sion d'alimentation
  []
 
-[4] [5]
-Overfull \hbox (8.70786pt too wide) in paragraph at lines 178--181
+[4]
+Overfull \hbox (8.70786pt too wide) in paragraph at lines 162--165
  \T1/cmr/bx/n/10 Com-para-teur[] \T1/cmr/m/n/10 Ce bloc va com-parer la sor-tie
  du fil-tre avec la référence définie par l'utilisateur
  []
 
-[6] [7]
+[5] [6]
 File: images/signfracheboud.png Graphic file (type png)
  <use images/signfracheboud.png>
-Package pdftex.def Info: images/signfracheboud.png used on input line 224.
+Package pdftex.def Info: images/signfracheboud.png used on input line 208.
 (pdftex.def)             Requested size: 94.10132pt x 36.13489pt.
 File: images/signfracheboud.png Graphic file (type png)
  <use images/signfracheboud.png>
-Package pdftex.def Info: images/signfracheboud.png used on input line 231.
+Package pdftex.def Info: images/signfracheboud.png used on input line 215.
 (pdftex.def)             Requested size: 28.23068pt x 10.84058pt.
 
-[8] 
+[7] 
 AED: lastpage setting LastPage
-[9] ("celllule orage.aux") ) 
+[8] ("celllule orage.aux") ) 
 Here is how much of TeX's memory you used:
- 15564 strings out of 493335
- 295816 string characters out of 3139228
- 324941 words of memory out of 3000000
- 18916 multiletter control sequences out of 15000+200000
+ 15570 strings out of 493335
+ 295922 string characters out of 3139228
+ 323941 words of memory out of 3000000
+ 18919 multiletter control sequences out of 15000+200000
  21594 words of font info for 59 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,11n,43p,10388b,508s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1266,9 +1268,9 @@ es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX
 type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy7.pfb>
-Output written on "celllule orage.pdf" (9 pages, 194355 bytes).
+Output written on "celllule orage.pdf" (8 pages, 366077 bytes).
 PDF statistics:
- 374 PDF objects out of 1000 (max. 8388607)
+ 373 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
