@@ -55,21 +55,10 @@
  \pagebreak
  
  \section{Introduction}
-  Le but de ce projet est de développer une cellule de déclenchement pour photographier les orages. Le concept est assez simple, il y a un capteur qui mesure la luminosité ambiante et un réglage qui permet de définir le seuil de déclenchement. Dès que le capteur détecte un changement de luminosité, un signal de déclenchement est envoyé à l'appareil photo connecté. \\
-
- \paragraph{Accessibilité}
- Dans l'idée de fournir une base ouverte, tout le travail est efectué avec des outils libres ou très courants, KiCAD pour la schématique/PCB, TexMaker pour la documentation, Github pour la gestion des versions, Excel pour les listes de matériel.
-Le projet est disponible à l'adresse suivante : {\itshape https://github.com/loicfracheboud/StormTrigger}
-  \begin{figure}[!h]
- \centering
- \vspace{5pt}
- \includegraphics[scale=0.25]{images/git_dl}
- \caption{Cliquer sur "Download ZIP" pour avoir toute la documentation nécessaire}
- \end{figure}
-  \pagebreak
+ Ce document traite du développement de la cellule présentée dans le document corespondant. \\
 
   \section{Cahier des charges}
-  Le cahier des charges a été établi selon les points suivants :
+  Pour rappel, le cahier des charges a été établi selon les points suivants :
   \begin{enumerate}
     \item Déclenchement rapide
     \item Fonctionne sur piles/batteries AA
@@ -93,10 +82,11 @@ Le projet est disponible à l'adresse suivante : {\itshape https://github.com/lo
   \section{Développement}
   Cette section traite de tous les calculs et dimensionnements de la cellule.\\
   Pour définir la valeur des composants (notamment les résistances et condensateurs) il existe des séries de valeurs normées, on y arrondi donc presque toujours les valeurs calculées, la tolérance des composants étant suffisante pour absorber les différences. Pour plus d'infos, consultez la norme correspondante\footnote{Norme CEI60063}.\\
-  A plusieurs reprises des références sont faites au datasheets, ce sont les documents officiels que les fabricants fournissent avec leurs composants contenant toutes les informations technique nécessaire à leur mise en service. Vous pouvez les retrouver dans le répertoire approprié de la documentation.
+  A plusieurs reprises des références sont faites au datasheets, ce sont les documents officiels que les fabricants fournissent avec leurs composants contenant toutes les informations techniques nécessaires à leur mise en service. Vous pouvez les retrouver dans le répertoire approprié de la documentation.
 
  \paragraph{Alimentation}
  L'alimentation en énergie du système est importante. Nous avons choisi de travailler avec des piles AA (ou des batteries AA). Pour pouvoir travailler efficacement avec les ampli-ops il faut une tension plus élevée que celle de 2 piles en parallèles/séries (soit environ 1.5/3 [V] (ou 1.2/2.4 [V] pour des batteries) dans la plage de fonctionnement standard). J'ai ajouté au schéma un convertisseur DC-DC qui permet de travailler le plus efficacement possible avec des sources aussi fluctuantes que des piles. \\
+ En alimentant le circuit avec une seule pile AA dont la capacité standard est de 2.85 [Ah]\footnote{Selon la page Wikipédia correspondante "Format des piles et accumulateur électriques"}, on obtient une autonomie de 365 [h] en activité (donc prêt à déclencher au moindre éclair) ou de 150 [h] en déclenchement (c'est à dire retour utilisateur - LED et buzzer - actifs et déclencheur actif).\\
  J'ai choisi le MAX857ESA+ qui permet de travailler dès 0.8 [V] et qui assure un courant de sortie de 500 [mA]. \\
  Pour définir la tension de sortie voulue, soit 6 [V], il faut dimensionner un pont diviseur qui donne une référence au convertisseur. Le calcul est le suivant :
 \begin{center}
@@ -199,8 +189,7 @@ Le buzzer choisi est le modèle KPEG203. Il suffit de l'alimenter entre 3 et 20 
 
  \pagebreak
  \section{Conclusion}
-  C'est un projet que j'ai eu en tête après une sortie de photo d'orage avec le groupe Passion Photographie. Par hasard deux jours après, je suis tombé sur Fabrice Giroud qui avait aussi dans l'idée de se faire une cellule. Du coup nous avons mis en place un petit groupe de réflexion pour définir les points importants du projet. Ce groupe est donc consituté de moi-même, Fabrice Giroud, Guillaume Schroeter, Mathieu Arlettaz et Emmanuel Boissard.\\
- Remerciement à .. pour l'aide
+  TODO
  
  \begin{wrapfigure}[0]{r}{6cm}
  \vspace{-52pt}
