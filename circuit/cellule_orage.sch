@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:cellule_orage-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,6 +28,9 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:maxim_integrated
+LIBS:on_semiconductor
+LIBS:audio_divers
 LIBS:cellule_orage-cache
 EELAYER 25 0
 EELAYER END
@@ -791,17 +793,6 @@ F 3 "" H 13000 3650 50  0000 L CNN
 	1    13000 3650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Jack_3.5mm_3pin J1
-U 1 1 577A8E90
-P 12650 1400
-F 0 "J1" H 12650 1650 60  0000 C CNN
-F 1 "Jack_3.5mm_3pin" H 12650 1150 60  0000 C CNN
-F 2 "" H 12650 1400 60  0000 C CNN
-F 3 "" H 12650 1400 60  0000 C CNN
-	1    12650 1400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	11350 2850 11350 2950
 Wire Wire Line
@@ -859,17 +850,6 @@ F 2 "" H 3850 9750 50  0000 C CNN
 F 3 "" H 3850 9750 50  0000 C CNN
 	1    3850 9750
 	-1   0    0    1   
-$EndComp
-$Comp
-L MAX857/859 U1
-U 1 1 57875DC3
-P 2900 9350
-F 0 "U1" H 2750 9800 60  0000 C CNN
-F 1 "MAX857/859" H 2950 9700 60  0000 C CNN
-F 2 "" H 2900 9350 60  0000 C CNN
-F 3 "" H 2900 9350 60  0000 C CNN
-	1    2900 9350
-	1    0    0    -1  
 $EndComp
 $Comp
 L L_Small L1
@@ -1036,17 +1016,6 @@ Wire Wire Line
 	2350 9500 2350 9450
 Wire Wire Line
 	2350 9450 2400 9450
-$Comp
-L NCP4586 U3
-U 1 1 5788655F
-P 5650 10250
-F 0 "U3" H 5650 10750 60  0000 C CNN
-F 1 "NCP4586" H 5650 10650 60  0000 C CNN
-F 2 "" H 5650 10250 60  0000 C CNN
-F 3 "" H 5650 10250 60  0000 C CNN
-	1    5650 10250
-	1    0    0    -1  
-$EndComp
 $Comp
 L C_Small C10
 U 1 1 57886F60
@@ -1587,5 +1556,49 @@ F 2 "" V 1550 5650 50  0000 C CNN
 F 3 "" V 1550 5650 50  0000 C CNN
 	1    1600 5750
 	0    -1   -1   0   
+$EndComp
+$Comp
+L MAX857/859 U?
+U 1 1 57F6590E
+P 2900 9350
+F 0 "U?" H 2750 9800 60  0000 C CNN
+F 1 "MAX857/859" H 2950 9700 60  0000 C CNN
+F 2 "" H 2900 9350 60  0000 C CNN
+F 3 "" H 2900 9350 60  0000 C CNN
+	1    2900 9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L NCP4586 U?
+U 1 1 57F67677
+P 5650 10250
+F 0 "U?" H 5650 10750 60  0000 C CNN
+F 1 "NCP4586" H 5650 10650 60  0000 C CNN
+F 2 "" H 5650 10250 60  0000 C CNN
+F 3 "" H 5650 10250 60  0000 C CNN
+	1    5650 10250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jack_3.5mm_3pin J?
+U 1 1 57F68248
+P 12700 1400
+F 0 "J?" H 12700 1650 60  0000 C CNN
+F 1 "Jack_3.5mm_3pin" H 12700 1150 60  0000 C CNN
+F 2 "" H 12700 1400 60  0000 C CNN
+F 3 "" H 12700 1400 60  0000 C CNN
+	1    12700 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L MAX14578AE U?
+U 1 1 57F6C9D2
+P 3950 5850
+F 0 "U?" H 4250 5150 60  0000 C CNN
+F 1 "MAX14578AE" H 4450 5050 60  0000 C CNN
+F 2 "" H 3950 5850 60  0001 C CNN
+F 3 "" H 3950 5850 60  0001 C CNN
+	1    3950 5850
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
