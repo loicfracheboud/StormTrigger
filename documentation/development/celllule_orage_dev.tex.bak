@@ -21,6 +21,7 @@
  \usepackage{array}
  \usepackage{numprint}
  \usepackage{siunitx}
+ \usepackage{url}
  \geometry{a4paper,
  total = {140mm, 237mm},
  left = 35mm,
@@ -100,8 +101,9 @@ Les valeurs des composants sont données par le datasheet.
 
   \paragraph{Chargeur de la batterie}
   
-afin d'avoir un système fonctionnant sur batterie et polyvalent, une charge via micro-USB type B est adaptée. Pour travailler proprement et respecter les normes \footnote{INSERER NORME}
-  \paragraph{Capteur}
+Afin d'avoir un système fonctionnant sur batterie et polyvalent, une charge via micro-USB type B est adaptée (c'est le connecteur le plus utilisé actuellement pour les appareils mobiles tels que smartphones, action-cams, etc). La norme USB définit que le périphérique peut consommer 500 [mA] \footnote{\url{https://fr.wikipedia.org/wiki/Universal_Serial_Bus#Alimentation_.C3.A9lectrique}}  
+
+\paragraph{Capteur}
   Le capteur est le phototransistor NPN BPW85 avec un angle de vision de 50° et une longueur d'onde nominale de 850 [nm] (plage de 450 à 1080 [nm]). \\
   Afin de l'alimenter, une source de courant lui sera fournie au collecteur. Cette source est composée de deux résistances et un condensateur. Les deux résistances fixent le courant et le condensateur permet d'amortir l'appel de courant lorsque le capteur entre en commutation. \\
   Le courant It voulu pour le phototransistor en saturation est de 1 [mA]. La tension d'alimentation est de 6 [V]. Afin de charger le condensateur assez rapidement, il faut un courant de charge Ic suffisant. Définissons le à 60 [mA]. Ainsi la résistance R1 et R2 valent :
