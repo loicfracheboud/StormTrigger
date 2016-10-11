@@ -99,9 +99,10 @@ Les autres composants se rattachant au convertisseur sont définis par le datash
 Afin de fournir le 3[V] de référence, un régulateur LDO ({\itshape(Low Dropout Output)} à sortie fixe sera employé. Le modèle choisi est le NCP4586, il permet de fournir 3 [V] et 150 [mA] ce qui satisfait pleinement le fonctionnement voulu.\\
 Les valeurs des composants sont données par le datasheet.
 
-  \paragraph{Chargeur de la batterie}
+  \paragraph{Chargeur de batterie}
   
-Afin d'avoir un système fonctionnant sur batterie et polyvalent, une charge via micro-USB type B est adaptée (c'est le connecteur le plus utilisé actuellement pour les appareils mobiles tels que smartphones, action-cams, etc). La norme USB définit que le périphérique peut consommer 500 [mA] \footnote{\url{https://fr.wikipedia.org/wiki/Universal_Serial_Bus#Alimentation_.C3.A9lectrique}}  
+Afin d'avoir un système fonctionnant sur batterie et polyvalent, une charge via micro-USB type B est adaptée (c'est le connecteur le plus utilisé actuellement pour les appareils mobiles tels que smartphones, action-cams, etc). La norme USB définit que le périphérique peut consommer 500 [mA] \footnote{\url{https://fr.wikipedia.org/wiki/Universal_Serial_Bus#Alimentation_.C3.A9lectrique}}. 
+\\Le choix du chargeur s'est donc porté sur le MCP73831, il est compact, peu cher, économe et simple d'application. Il offre une charge adaptée à la technologie de batterie choisie ainsi qu'un retour utilisateur sur l'état de la charge.
 
 \paragraph{Capteur}
   Le capteur est le phototransistor NPN BPW85 avec un angle de vision de 50° et une longueur d'onde nominale de 850 [nm] (plage de 450 à 1080 [nm]). \\
@@ -187,7 +188,7 @@ Pour informer l'utilisateur du déclenchement, un buzzer et une LED sont activé
 Une LED 2 [mA] suffit, sa résistance de limitation vaut :
 \begin{center}
  $ Vmos = Rdson * Iled = 2.5*\num{2e-3} = 4 [mV] $
- $ R13 = \frac{Vao-Vled-Vmos}{Iled} = \frac{3-1.7-\num{4e-3}}{\num{4e-3}} = 648 [\ohm] $
+ $ R13 = \frac{Vao-Vled-Vmos}{Iled} = \frac{3-1.7-\num{4e-3}}{\num{2e-3}} = 648 [\ohm] $
 \end{center}
 R13 vaudra 649 [\ohm].\\
 Le buzzer choisi est le modèle KPEG203. Il suffit de l'alimenter entre 3 et 20 [V] et consomme 4 [mA] à 6 [V]. Afin de bien séparer les élements en sortie du timer, le buzzer est commandé par un MOSFET (le même que déjà utilisé pour les LEDs).

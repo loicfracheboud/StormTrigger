@@ -1,4 +1,4 @@
-update=06.10.2016 10:44:45
+update=11.10.2016 10:13:29
 version=1
 last_client=kicad
 [pcbnew]
@@ -37,7 +37,7 @@ SpiceUseNetNumbers=0
 LabSize=60
 [eeschema]
 version=1
-LibDir=
+LibDir=../../KiCad_lib
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -71,3 +71,4 @@ LibName29=valves
 LibName30=C:/Users/loicf/Documents/GitHub/KiCad_lib/maxim_integrated
 LibName31=C:/Users/loicf/Documents/GitHub/KiCad_lib/on_semiconductor
 LibName32=C:/Users/loicf/Documents/GitHub/KiCad_lib/audio_divers
+LibName33=microchip_divers
