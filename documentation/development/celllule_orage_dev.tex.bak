@@ -56,7 +56,7 @@
  \pagebreak
  
  \section{Introduction}
- Ce document traite du développement de la cellule présentée dans le document corespondant. \\
+ Ce document traite du développement de la cellule présentée dans le document corespondant.
 
   \section{Cahier des charges}
   Pour rappel, le cahier des charges a été établi selon les points suivants :
@@ -87,7 +87,7 @@
 
  \paragraph{Alimentation}
  L'alimentation en énergie du système est importante. Nous avons choisi de travailler avec une batterie LiFePO4 au format AA (ou une pile AA, l'idée étant de pouvoir remplacer facilement l'alimentation sur le terrain). Pour pouvoir travailler efficacement avec les ampli-ops il faut une tension plus élevée que celle de batterie (soit 3.3 [V] (ou 1.5 [V] pour une pile AA). J'ai ajouté au schéma un convertisseur DC-DC qui permet de travailler le plus efficacement possible avec une source dont la tension varie au fil de sa décharge. Il comporte également le circuit de charge de la batterie, les informations complètes à ce sujet sont données dans le chapitre correspondant.\\
- En alimentant le circuit avec la batterie choisie, dont la capacité est de 1.1 [Ah], on obtient une autonomie de XX [h] en activité (donc prêt à déclencher au moindre éclair) ou de XX [h] en déclenchement (c'est à dire retour utilisateur - LED et buzzer - actifs et déclencheur actif).\\
+ En alimentant le circuit avec la batterie choisie \footnote{Voir LiFePO4 dans le dossier "divers" de la documentation} dont la capacité est de 1.1 [Ah], on obtient une autonomie de XX [h] en activité (donc prêt à déclencher au moindre éclair) ou de XX [h] en déclenchement (c'est à dire retour utilisateur - LED et buzzer - actifs et déclencheur actif).\\
  Pour la régulation de l'alimentation du circuit, j'ai choisi le MAX857ESA+ qui permet de travailler dès 0.8 [V] et qui assure un courant de sortie de 500 [mA]. \\
  Pour définir la tension de sortie voulue, soit 6 [V], il faut dimensionner un pont diviseur qui donne une référence au convertisseur. Le calcul est le suivant :
 \begin{center}
@@ -95,6 +95,7 @@
 \end{center} 
 R14 est définie à 10 [k\ohm]\footnote{Selon le datasheet du MAX857ESA+} et R15 vaudra 38.3 [k\ohm].\\
 Les batteries de technologie LiFePO4 sont considérées comme déchargées au-dessous de 2.8 [V] \footnote{Selon la page Wikipédia correspondante ainsi que divers sites spécialisés}, ainsi nous sommes en permanence dans la plage de fonctionnement du convertisseur.\\
+Le circuit possède une unité de contrôle de la batterie. Il suffit de monitorer la tension de la batterie sur la pin LBI (Low Battery Input) et le MAX857 contrôle la pin LBO (Low Battery Output). Cette dernière est tirée au GND lorsque la batterie atteint un niveau de charge inférieur à la référence.\\
 Les autres composants se rattachant au convertisseur sont définis par le datasheet.\\
 Afin de fournir le 3[V] de référence, un régulateur LDO ({\itshape(Low Dropout Output)} à sortie fixe sera employé. Le modèle choisi est le NCP4586, il permet de fournir 3 [V] et 150 [mA] ce qui satisfait pleinement le fonctionnement voulu.\\
 Les valeurs des composants sont données par le datasheet.
@@ -181,7 +182,8 @@ En sortie du Timer, un MOSFET canal N (le BSS138LT1) placé en série avec la LE
  $ R12 = \frac{Vao-Vled-Vmos}{Iled} = \frac{3-1.25-\num{25e-3}}{\num{10e-3}} = 173 [\ohm] $
 \end{center}
 R12 sera une 174 [\ohm].\\
-Afin de permettre une utilisation ouverte au maximum d'appareil photo, la sortie du déclencheur est un connecteur Jack 2.5 [mm]. Ainsi, l'utilisateur n'a qu'à brancher un câble Jack 2.5 d'un côté et le connecteur adapté à son matériel de l'autre.
+Afin de permettre une utilisation ouverte au maximum d'appareil photo, la sortie du déclencheur est un connecteur Jack 2.5 [mm]. Ainsi, l'utilisateur n'a qu'à brancher un câble Jack 2.5 d'un côté et le connecteur adapté à son matériel de l'autre.\\
+Le jumper est nécessaire pour les reflex Nikon, il faut donc le fermer lors du travail avec un APN de ce fabriquant.
 
 \paragraph{Retour utilisateur}
 Pour informer l'utilisateur du déclenchement, un buzzer et une LED sont activés en même temps que l'appareil photo. Ces deux indicateurs sont désactivables indépendamment.\\

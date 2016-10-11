@@ -1,0 +1,640 @@
+//Cached 2016-08-26 13:42:03
+
+//[6598] - [lifepo418650rechargeablecell32v1100mah495arate352wh]
+
+var sa_write_review = 1;
+
+
+if (typeof(sa_product_reviews) == 'undefined') {
+    var sa_product_reviews = {};
+}
+if (typeof(sa_product_reviews['high']) == 'undefined') {
+    sa_product_reviews['high'] = {};
+}
+
+sa_product_reviews['high'] = [{"id":"22781889","name":"DAVID T","date":"25 Aug 2016","country":"United States","state":"CA","city":null,"rating":"5.0","comments":"gREAT!","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"23359495","name":"Anonymous","date":"25 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Custom battery pack service has been awesome","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"23340655","name":"Richard A","date":"24 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Good product and service","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"23340225","name":"Sudarshan","date":"24 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"I will shop again if your packaging is eco friendly, and you dont use harmful plastics or styrofoam in packaging","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"23316329","name":"Joe F","date":"24 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Great website, wonderful selection at great prices","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22771749","name":"don ","date":"23 Aug 2016","country":"United States","state":"TX","city":null,"rating":"5.0","comments":"always easy and fast shipping","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"23299088","name":"Anonymous","date":"23 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Fast and great service every time!","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22740975","name":"Lorraine","date":"22 Aug 2016","country":"United States","state":"TX","city":null,"rating":"5.0","comments":"We were very happy with our purchase!","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22733460","name":"Dave O","date":"22 Aug 2016","country":"United States","state":"MN","city":null,"rating":"5.0","comments":"Quick and prompt help from email to sales about a battery pack needing a specific connector.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22686648","name":"Warren M","date":"22 Aug 2016","country":"United States","state":"","city":null,"rating":"5.0","comments":"Experience was fine, shipping rate is over the top.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"23275027","name":"James R","date":"22 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"My second purchase, I use these products all the time. I'll look here for more.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"23270717","name":"Rand B","date":"22 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Helpful Customer Service - easy ordering","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22722314","name":"Linda C","date":"21 Aug 2016","country":"United States","state":"","city":null,"rating":"5.0","comments":"thanks it is easy","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22696187","name":"Benjamin von C","date":"20 Aug 2016","country":"United States","state":"GA","city":null,"rating":"5.0","comments":"Good.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"23236937","name":"David S","date":"20 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Simple with no hassles!","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"23227095","name":"Richard A","date":"20 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"easy to place order","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"23219980","name":"Dave F","date":"20 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"$10 for one little AA rechargeable batt seems steep......but then again...it is coming from CA!?","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"23218226","name":"richard l","date":"20 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"good experience","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"23216108","name":"Anonymous","date":"19 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"it was good","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"23214274","name":"Anonymous","date":"19 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Quit asking questions","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"23200718","name":"Michael P","date":"19 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"rep was very helpful in finding item I needed...","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"23177008","name":"Donald C","date":"18 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"HAD THE PRODUCT I NEEDED AND SEARCH WAS EASY.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22586687","name":"CHARLIE","date":"16 Aug 2016","country":"United States","state":"TX","city":null,"rating":"5.0","comments":"Very satisfied with fact that I had wider variety of battery packs","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"23124362","name":"Bruce H","date":"16 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Everlasting REPEAT CUSTOMER !!!   :-)","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"23120281","name":"Anonymous","date":"16 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Excellent","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"23119131","name":"Nadine D","date":"16 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"I was able to place my order quickly and efficiently.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"23113520","name":"Paulo S","date":"16 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Some buttons of the site on the upper menu were not working for me... Just that...","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"23101769","name":"Anonymous","date":"16 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"has everything I need.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22561892","name":"Marc","date":"15 Aug 2016","country":"United States","state":"","city":null,"rating":"5.0","comments":"Always a quality experience.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22548320","name":"richard b","date":"15 Aug 2016","country":"United States","state":"","city":null,"rating":"5.0","comments":"glad to find a site with the product I need at a reasonable cost.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"23090804","name":"Scott","date":"15 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Great company. Great service. Great products!","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"23090526","name":"Steve G","date":"15 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"great products, thank you for the quick service.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22554584","name":"Peter S","date":"14 Aug 2016","country":"United States","state":"CA","city":null,"rating":"5.0","comments":"Great Site.  Good Products.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"23054529","name":"pasquale g. l","date":"14 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"shipping for this item seems too high.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22523895","name":"Dirk C","date":"13 Aug 2016","country":"United States","state":"","city":null,"rating":"5.0","comments":"Excellent","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22531974","name":"Ezra F","date":"13 Aug 2016","country":"United States","state":"","city":null,"rating":"5.0","comments":"Great crew at the shop. Always very helpful. ","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"23036129","name":"Anonymous","date":"13 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Thx!!","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"23029600","name":"kelvin","date":"13 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Really expensive","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"23026165","name":"Anonymous","date":"13 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Good","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"23020825","name":"Vincent B","date":"13 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Shopping here is always easy!!","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22501208","name":"Kenneth W","date":"12 Aug 2016","country":"United States","state":"","city":null,"rating":"5.0","comments":"Web page is well laid out and easy to use.  The batteries were easy to locate.  Batteries arrived in good condition, in a timely manner, and were as described.  Very easy to do business with and would purchase from them again.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22470743","name":"Glenn A. T","date":"11 Aug 2016","country":"United States","state":"SC","city":null,"rating":"5.0","comments":"easy to order I was very happy with the whole transaction.<br><br>    thank you,<br>    Glenn A Temples","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22490851","name":"David","date":"11 Aug 2016","country":"United States","state":"","city":null,"rating":"5.0","comments":"No problems...","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22484467","name":"Grant r","date":"11 Aug 2016","country":"United States","state":"","city":null,"rating":"5.0","comments":"good stuff","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22969494","name":"Anonymous","date":"11 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"thank you very easy","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22967694","name":"David A","date":"11 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Thanks,  Please send me the DOT\/UN 38.3 Documents with Batteries.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22957436","name":"Edmund G","date":"10 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Easy to order","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22953944","name":"Anonymous","date":"10 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Always a good experience.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22944103","name":"michelle z","date":"10 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"prior to placing my order online, i spoke with the best customer service rep ever, Nicky. She walked me through the product and the different options available. She was super patient and knowledgeable and made me feel extremely confident in the items i was purchasing. THANK YOU NICKY, YOU'RE THE BEST!","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22428914","name":"Robert C","date":"09 Aug 2016","country":"United States","state":"MI","city":null,"rating":"5.0","comments":"good battery selection, great price. Shop around and you will see these are a bargan for NiMH battery packs!","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22919804","name":"Tracy","date":"09 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"This is only my second order from here, and that is because the other batteries I bought are still working. I have charged the bulk of the batteries probably over 200 times and there seems to be little, if any measurable degradation in capacity. The price is great and I will keep shopping here.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22411356","name":"Jesse L","date":"08 Aug 2016","country":"Canada","state":"AB","city":null,"rating":"5.0","comments":"Great customer support, easy to deal with, Thanks!","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22891971","name":"Ray J","date":"08 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Smoothly so far","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22891494","name":"Geoff","date":"08 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"I found exactly what I was looking for and the prices seemed excellent.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22887859","name":"Anonymous","date":"08 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Easy","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22882311","name":"Robert L. R","date":"08 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Shopping was quick and simple","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22865815","name":"Greg F","date":"07 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Very through and relatively easy to use.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22865388","name":"Clayton h","date":"07 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Very nice.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22355963","name":"victor.karani","date":"06 Aug 2016","country":"United States","state":"","city":null,"rating":"5.0","comments":"Great stuff!","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22847982","name":"Timothy M","date":"06 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"it is simple","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22845001","name":"Tony L","date":"06 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"So far I am very pleased.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22823421","name":"Anonymous","date":"05 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"happy so far","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22822580","name":"Allen K","date":"05 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"I have used you in the past and have always been happy with the results.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22804372","name":"Arlie K","date":"04 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Quick and easy.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22798329","name":"Anonymous","date":"04 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Shipping is kinda high for two small batteries.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22259510","name":"Graeme P","date":"03 Aug 2016","country":"Canada","state":"NB","city":null,"rating":"5.0","comments":"It is always a pleasure to shop at www.batteryspace.com.  I find exactly what I want, checkout is quick and easy and order typically arrives within 5 business days.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22309004","name":"charles f","date":"03 Aug 2016","country":"United States","state":"","city":null,"rating":"5.0","comments":"Shopping here is great. The shipping is a tad expensive though.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22775972","name":"zhiqiang X","date":"03 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Great products and honest seller.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22758841","name":"penny","date":"03 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"simple","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22757802","name":"Anonymous","date":"03 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"i looked for hours until you guys","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22271943","name":"Gary B","date":"02 Aug 2016","country":"United States","state":"","city":null,"rating":"5.0","comments":"Fantastic parts, shipping and handling.<br>Gary","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22175810","name":"Chuck M","date":"02 Aug 2016","country":"United States","state":"CA","city":null,"rating":"5.0","comments":"Very Prompt, Very Accurate, Very Responsive. And, Cost Effective.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22736402","name":"Anonymous","date":"02 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"EASY TO ORDER","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22731074","name":"Anonymous","date":"02 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Quick, easy, no muss, no fuss.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22715935","name":"Joe Van D","date":"01 Aug 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"great every time and the products too.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22693336","name":"Robert","date":"31 Jul 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"EXPENSIVE SHIPPING.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22650048","name":"Ron Z","date":"29 Jul 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"Very good  I was able to find what I needed.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22618665","name":"Steve S","date":"28 Jul 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"So far you seem to have what I needed. I will return for sure.","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22160280","name":"huu nghia v","date":"27 Jul 2016","country":"United States","state":"TX","city":null,"rating":"5.0","comments":"nikki was a delight to deal with to build a custom battery pack","heading":"","recommend":"","verified":true,"response":null,"resolution":false},{"id":"22602596","name":"Jeff","date":"27 Jul 2016","country":null,"state":null,"city":null,"rating":"5.0","comments":"You guys are great to work with.","heading":"","recommend":"","verified":true,"response":null,"resolution":false}]
+
+var sa_foundrows = 4292;
+
+var sa_total_found = 14395;
+var sa_productid = 'lifepo418650rechargeablecell32v1100mah495arate352wh';
+var sa_product_desc = '';
+ 
+var sa_siteid = 6598;
+var sa_domain = 'batteryspace.com';
+var sa_perlist = 80;
+var sa_overall = 4.6;
+var sa_percentage = '92';
+var sa_graph = '45.71.987.3566.9726';
+var sa_percentage_desc = 'of customers that buy<br /> from this merchant give <br />them a 4 or 5-Star rating.';
+var sa_showheader = 1;
+var sa_merchantheader = "We're currently collecting product reviews for this item. In the meantime, here are some reviews from our past customers sharing their overall shopping experience. ";
+var sa_rtype = 'merchant';
+var sa_start_sort = 'high'; 
+var sa_hasfeatured = false; 
+
+if (typeof(sa_foundrows) != 'undefined') {
+    sa_total_found = sa_foundrows;
+    sa_foundrows = 4292;
+}
+else {
+    var sa_foundrows = 4292;
+}
+
+
+var sa_css = '.product_review { padding: 30px 15px 30px 15px; border-bottom: #cccccc solid 1px; clear: both; } .merchant_review { max-width: inherit; } .product_review .stars { float: left; padding-bottom: 5px; } #product_just_stars .on { width: 20px; height: 19px; background-image: url(\'https://www.shopperapproved.com/page/images3_0/stars/star-full-sm.png\'); display: inline-block; } #product_just_stars .half { width: 20px; height: 19px; background-image: url(\'https://www.shopperapproved.com/page/images3_0/stars/star-half-sm.png\'); display: inline-block; } #product_just_stars .off { width: 20px; height: 19px; background-image: url(\'https://www.shopperapproved.com/page/images3_0/stars/star-empty-sm.png\'); display: none; } .custom-answer .on { width: 20px; height: 19px; background-image: url(\'https://www.shopperapproved.com/page/images3_0/stars/star-full-sm.png\'); display: inline-block; } .custom-answer .off { width: 20px; height: 19px; background-image: url(\'https://www.shopperapproved.com/page/images3_0/stars/star-empty-sm.png\'); display: inline-block; } .custom_sum .on { width: 20px; height: 19px; background-image: url(\'https://www.shopperapproved.com/page/images3_0/stars/star-full-sm.png\'); display: inline-block; } .custom_sum .half { width: 20px; height: 19px; background-image: url(\'https://www.shopperapproved.com/page/images3_0/stars/star-half-sm.png\'); display: inline-block; } .custom_sum .off { width: 20px; height: 19px; background-image: url(\'https://www.shopperapproved.com/page/images3_0/stars/star-empty-sm.png\'); display: inline-block; } #product_just_stars.big .on { width: 25px; height: 24px; background-image: url(\'https://www.shopperapproved.com/page/images3_0/stars/star-full-md.png\'); display: inline-block; margin: 1px; } #product_just_stars.big .half { width: 25px; height: 24px; background-image: url(\'https://www.shopperapproved.com/page/images3_0/stars/star-half-md.png\'); display: inline-block; margin: 1px; } #product_just_stars.big .off { width: 25px; height: 24px; background-image: url(\'https://www.shopperapproved.com/page/images3_0/stars/star-empty-md.png\'); display: none; margin: 1px; } #product_just_stars.med21 .on { width: 20px; height: 19px; background-image: url(\'https://www.shopperapproved.com/page/images3_0/stars/star-full-sm.png\'); display: inline-block; } #product_just_stars.med21 .half { width: 20px; height: 19px; background-image: url(\'https://www.shopperapproved.com/page/images3_0/stars/star-half-sm.png\'); display: inline-block; } #product_just_stars.med21 .off { width: 20px; height: 19px; background-image: url(\'https://www.shopperapproved.com/page/images3_0/stars/star-empty-sm.png\'); display: none; } .ind_cnt { font-size: 9px; display: block; text-align: center; width: 100%; } /*.ind_cnt.low { display: none; }*/ .big .ind_cnt { width: 125px; } .product_review .stars .on { width: 20px; height: 19px; background-image: url(\'https://www.shopperapproved.com/page/images3_0/stars/star-full-sm.png\'); display: inline-block; } .product_review .stars .half { width: 20px; height: 19px; background-image: url(\'https://www.shopperapproved.com/page/images3_0/stars/star-half-sm.png\'); display: inline-block; } .product_review .stars .off { width: 20px; height: 19px; background-image: url(\'https://www.shopperapproved.com/page/images3_0/stars/star-empty-sm.png\'); display: inline-block; } .product_review .images { float: right; font-size: 12px; margin-right: 15px; } .product_review .images .recommend { padding-left: 16px; background: url(\'https://www.shopperapproved.com/page/images3_0/recommend-check.png\') no-repeat left center; float: right; padding-right: 16px; } .product_review .images .verified { padding-left: 16px; background: url(\'https://www.shopperapproved.com/page/images3_0/verifiedbuyer.png\') no-repeat left center; float: right; } .product_review .rheading { font-size: 15px; clear: both; font-weight: bold; padding-bottom: 10px; } .product_review .rproduct { font-size: 15px; clear: both; font-weight: bold; padding: 10px 0; } .product_review .info { font-size: 13px; color: #555555; clear: both; } .product_review .comments { font-size: 15px; padding-top: 10px; } .custom_head { font-size: 15px; font-weight: bold; } .product_review .custom-question { font-size: 15px; padding-top: 10px; font-weight: bold; } .product_review .resolution-attempt { color: #32a9d1; padding: 10px 0 0 0; font-size: 10px; } .sa_response_header { font-size: 15px; font-weight: bold; padding: 10px 0 0 0; } .product_review .custom-answer { font-size: 15px; } #product_page .paging { padding: 15px 15px 30px 15px; height: 24px; } #merchant_page .paging { max-width: inherit; } #product_page .paging .sa_page { width: 24px; height: 24px; margin-right: 6px; background-color: white; border: #cccccc solid 1px; padding: 0; font-size: 10px; text-align: center; } #product_page .paging .arrow { font-weight: bold; color: #02669a; text-align: left; padding-left: 6px; } #product_page .paging .active { background-color: #eeeeee; } #review_image { height: 40px; } #review_image .sa_logo { border: 0; margin-top: -60px; display: block; float: right; } #review_header { padding: 0 15px 15px 15px; border-bottom: #cccccc solid 1px; /*border-top: #cccccc solid 1px;*/ } #review_header.hide_header div.overall { display: none; } #review_header.hide_header div.stars { display: none; } #review_header .block { display: block; height: 96px; float: left; text-align: center; margin-top: 15px; } #review_header .overall { width: 100px; color: white; } #review_header .overall .numbers { font-size: 32px; font-weight: bold; background-color: #cccccc; padding: 16px 0; float: none; margin: 0; } #review_header .overall .color5 { background-color: #019f17; } #review_header .overall .color4 { background-color: #789f01; } #review_header .overall .color3 { background-color: #cbb103; } #review_header .overall .color2 { background-color: #a3620a; } #review_header .overall .color1 { background-color: #790000; } #review_header .overall .outof { padding: 5px 0; font-size: 14px; background-color: #000; } .outof div { display:inline-block; vertical-align:middle; } #review_header .graph { width: 196px; margin-left: 15px; } #review_header .stars { width: 135px; font-size: 22px; font-weight: bold; padding-top: 5px; } #review_header .stars .desc { padding-bottom: 6px; margin: 0 auto; } #review_header .stars .on { width: 25px; height: 24px; background-image: url(\'https://www.shopperapproved.com/page/images3_0/stars/star-full-md.png\'); display: inline-block; margin: 1px; } #review_header .stars .half { width: 25px; height: 24px; background-image: url(\'https://www.shopperapproved.com/page/images3_0/stars/star-half-md.png\'); display: inline-block; margin: 1px; } #review_header .percentage { width: 134px; margin-left: 38px; font-size: 12px; padding-top: 5px; } #review_header .percentage .numbers { font-size: 32px; font-weight: bold; padding-bottom: 5px; } .aggregatesum { width: 200px; } .aggregatesum .custom_sum { padding-bottom: 5px; } #custom_aggregate { padding: 0 15px 30px 15px; border-top: #cccccc solid 1px; margin-top: 10px; /*border-top: #cccccc solid 1px;*/ } #custom_aggregate .block { display: block; height: 110px; float: left; text-align: center; margin-top: 15px; width: 250px; } .pr_link { background-color: #0C6DA3; color: white; border: 0; font-size: 12px; padding: 2px 4px; margin-top: 11px; -moz-border-radius: 6px; -webkit-border-radius: 6px; -khtml-border-radius: 6px; border-radius: 6px; } .pr_bottom { margin-top: -50px; float: left; display: none; } .sa_media img { max-width: 200px; max-height: 200px; margin: 10px 20px; cursor: pointer; } #sa_media_view { display: none; position: fixed; top: 20px; width: 100%; z-index: 10000; text-align: center; } #sa_media_view img { max-width: 80%; max-width: 80%; } #sa_media_background { position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 9999; background-color:#333333; display: none; opacity: 0.40; } .modalWindow { display: none; position: fixed; left: 50%; top: 20px; width: 600px; margin-left: -300px; background-color: white; padding: 10px; text-align: left; z-index: 10000; } @media (max-width: 360px) { .product_review .images .recommend { float: none; padding-right: 0px; } .product_review .images .verified { float: none; } #review_image .sa_logo { margin-top: 0px; } } @media (max-width: 600px) { #review_header { text-align: center; } #review_header .percentage { margin-right: 38px; } #review_header .block { display: inline-block; float: none; } } ';
+
+if (!Object.keys) {
+  Object.keys = function(obj) {
+    var keys = [];
+
+    for (var i in obj) {
+      if (obj.hasOwnProperty(i)) {
+        keys.push(i);
+      }
+    }
+
+    return keys;
+  };
+}
+
+if (typeof(sa_static) == 'undefined')
+    sa_static = false;
+    
+if (typeof(sa_products_count) == 'undefined') {
+    sa_products_count = 3; // (typeof(sa_review_count) == 'undefined') ? 3 : sa_review_count;
+}
+    
+if (typeof(sa_date_format) == 'undefined')
+    sa_date_format = 'F j, Y';
+
+sa_setCookie = function(c_name,value,exdays)
+{
+    var exdate=new Date();
+    exdate.setDate(exdate.getDate() + exdays);
+    var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+    document.cookie=c_name + "=" + c_value;
+}
+
+sa_getCookie = function(c_name)
+{
+    var i,x,y,ARRcookies=document.cookie.split(";");
+    for (i=0;i<ARRcookies.length;i++)
+    {
+        x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+        y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+        x=x.replace(/^\s+|\s+$/g,"");
+        if (x==c_name)
+        {
+            return unescape(y);
+        }
+    }
+    return null;
+} 
+
+var sa_index = 0;
+
+function saLoadScript(src) { 
+    var js = window.document.createElement("script"); 
+    js.src = src; 
+    js.type = "text/javascript"; 
+    document.getElementsByTagName("head")[0].appendChild(js); 
+}  
+
+function loadStyle(css) {
+    var sastyle = document.createElement('style');
+    sastyle.type = 'text/css';
+    
+    if (typeof(sastyle.styleSheet) != 'undefined' && typeof(sastyle.styleSheet.cssText) != 'undefined') {
+        sastyle.styleSheet.cssText = css;   
+    }
+    else {
+        sastyle.innerHTML = css;    
+    }
+    document.getElementsByTagName('head')[0].appendChild(sastyle);
+}
+
+if (typeof(sa_suppress_style) == 'undefined') {
+    loadStyle(sa_css);
+}
+
+function formatDate(date, format) {
+    date = Date.parse(date);
+    date = new Date(date);
+    var day = date.getDate();
+    var year = date.getFullYear();
+    var month = date.getMonth();
+    
+    var longmonth = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    var shortmonth = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    
+    switch (format) {
+        case 'm/d/Y':
+            return sa_pad(month+1, 2) + '/' + sa_pad(day, 2) + '/' + year;
+        case 'd/m/Y':
+            return sa_pad(day, 2) + '/' + sa_pad(month+1, 2) + '/' + year; 
+        case 'j M Y':
+            return day + ' ' + shortmonth[month] + ' ' + year;
+        case 'F j, Y':
+            return longmonth[month] + ' ' + day + ', ' + year;   
+    }  
+}
+
+function sa_pad(num, size) {
+    var s = num+"";
+    while (s.length < size) s = "0" + s;
+    return s;
+} 
+
+
+function saStars(num) {
+    var stars = '';
+    
+    for (var j=1; j<=5; j++) {
+        if (num >= 0.75)
+            stars += '<span class="on"></span>';
+        else if (num >= 0.24)
+            stars += '<span class="on half"></span>';
+        else
+            stars += '<span class="off"></span>';  
+        num--;      
+    }   
+    return stars;  
+}
+
+function loadPagingEvents(sort) {
+    if (typeof(sa_page) == 'undefined') {
+        sa_page = 'product-page';
+    }
+    
+    saJQ('.sa_page').click( function () {
+        var btn = this;
+        saJQ('#product_page').animate({ opacity: 0 }, 300, function () {
+            var pagematch = saJQ(btn).val().match(/([0-9]+)$/);
+            var newpage = pagematch[1]-1;
+            
+            saOpenPage(newpage, sort);
+            var flp = (parseInt(pagematch[1])+4)*sa_products_count;
+            if (typeof(sa_product_reviews[sort][flp]) == 'undefined') {
+                var jsp = Math.floor(flp/sa_perlist);
+                var reverse = (typeof(sa_productreverse) == 'undefined') ? '' : '&reverse=' + sa_productreverse;
+                saLoadScript('//www.shopperapproved.com/widgets/'+sa_page+'.php?siteid='+sa_siteid+'&productid='+sa_productid+'&page='+jsp+'&sort='+sort+reverse+'&rtype='+sa_rtype);
+            }
+            
+                
+        });   
+    });
+    
+    saJQ('#sa_sort').change( function () {
+        saJQ('#product_page').animate({ opacity: 0 }, 300);
+        sort = saJQ(this).val();
+        var reverse = (typeof(sa_productreverse) == 'undefined') ? '' : '&reverse=' + sa_productreverse;
+        saLoadScript('//www.shopperapproved.com/widgets/'+sa_page+'.php?siteid='+sa_siteid+'&productid='+sa_productid+'&page=0&sort='+sort+reverse+'&loadnow=1'+'&rtype='+sa_rtype);
+    });
+}
+
+
+
+
+//http://weblogs.asp.net/joelvarty/archive/2009/05/07/load-jquery-dynamically.aspx
+var jQueryScriptOutputted = false;
+function initsaJQProductPage(restart) {
+    
+    function saPreparePage() {
+        if (typeof(lightback) == 'undefined')
+            var lightback = IsLight(saJQ('#review_image'));
+        
+        if (typeof(sa_overall) != undefined && sa_overall > 0) {
+            var pairs = (lightback) ? 'values-'+sa_graph
+                : 'values-'+sa_graph +'_dark-1';
+            if (typeof(sa_barcolor) != 'undefined') {
+                pairs += '_barscolor-' + sa_barcolor.replace(/#/g, ''); 
+            }
+            
+            var graph = '//www.shopperapproved.com/custom/'+pairs+'/gold-bars.png';
+                
+            var colorsclass = 'color' + Math.round(sa_overall);
+            var html = '';
+            
+            if (typeof(sa_merchantheader) != undefined && sa_merchantheader != '') {
+                html += '<div class="merchantheader">'+sa_merchantheader+'</div>';
+            }
+            
+            html += '<div class="overall block"><div class="numbers '+colorsclass+'">' + sa_overall + '</div>'
+                + '<div class="outof"><div>Out of 5.0</div></div></div>';
+            
+            if (sa_showheader) {    
+                html += '<img class="graph block" src="'+graph+'" />';
+                html += '<div class="stars block"><div class="desc">Overall Rating</div>';
+            }
+            else {
+                html += '<div class="stars block" style="margin-left: 20px;"><div class="desc">Overall Rating</div>';
+            }
+                
+            html += saStars(sa_overall);
+            
+            html += '</div>';
+            
+            if (sa_showheader) {                 
+                html += '<div class="percentage block"><div class="numbers">' + sa_percentage + '%</div>'
+                    + sa_percentage_desc + '</div>';
+                    
+                if (typeof(sa_custom_ag) != 'undefined') {
+                    var inblock = 0;
+                    html += '<div class="aggregatesum block">';
+                    for (var q in sa_custom_ag) {
+                        html += '<div class="custom_sum"><div class="custom_head">' + q + '</div>'
+                            + saStars(sa_custom_ag[q]['average']) + '</div>';
+                        inblock++;
+                        if (inblock == 3) {
+                            html += '</div><div class="aggregatesum block">';
+                            inblock = 0;
+                        }                    
+                    }
+                    html += '</div>';
+                }
+                                                           
+            }
+            html += '<div style="clear:both;">'; 
+                
+            if (sa_product_desc) {
+                /*if (typeof(sa_write_review) != 'undefined' && sa_write_review == 2) {
+                    html += '<div id="shopper_approved"></div>'; 
+                    sa_values['hold'] = false;   
+                }
+                else { */               
+                    html += '<input class="pr_link" type="button" onclick="ReviewProduct(sa_productid, sa_product_desc, sa_product_image_src);" value="Write a review about this product &#9654;" />';
+                //}
+            }
+            html += '</div>';
+                            
+            if (!sa_showheader && sa_overall < 4) {
+                saJQ('#review_header').addClass('hide_header');    
+            }
+            html += '<div id="sa_media_view"></div><div id="sa_media_background"></div>';
+            
+            if (typeof(sa_custom_ag) != 'undefined') {
+                html += '<div id="custom_aggregate">';
+                for (var q in sa_custom_ag) {
+                    html += '<div class="custom_graph block"><div class="custom_head">' + q + '</div>'
+                        + '<img alt="" src="//www.shopperapproved.com/backend/custom-images/gold-bars.php?'+sa_custom_ag[q]['graph']+'" /></div>';                    
+                }
+                html += '<div style="clear: both;"></div>';
+            }
+            
+            
+            saJQ('#review_header').html(html);              
+            
+            var anchor_link = 'review_header';
+        }   
+        else {
+            //saJQ('#review_header').hide();   
+            //var anchor_link = 'product_page'; 
+            var anchor_link = 'review_header';
+           
+        }  
+        
+        if (typeof(sa_overall) != undefined && sa_overall > 0) {
+            var smallstars = saStars(sa_overall);
+            
+            if (sa_foundrows < 10)
+                var rng = 'low';
+            else if (sa_foundrows < 50)
+                var rng = 'med';
+            else
+                var rng = 'high';
+                
+            var reviewcntdesc = (sa_foundrows == 1) ? '1 review' : sa_foundrows + ' reviews';
+            
+            var anchordiv = (document.getElementById('shopperapproved_div') == null)
+                ? anchor_link : 'shopperapproved_div';
+            
+            smallstars += '<span class="ind_cnt '+rng+'">'
+                + '<a class="sa_jump_to_reviews" href="#'+anchordiv+'">' + reviewcntdesc + '</a></span>';
+            
+            if (sa_rtype == 'product') {
+                saJQ('#product_just_stars').html(smallstars);
+            }
+            saJQ('.shopperapproved_product_summary').show();
+        }   
+        
+        var image = (lightback) 
+            ? '//www.shopperapproved.com/widgets/widgetfooter-darklogo.png'
+            : '//www.shopperapproved.com/widgets/widgetfooter-whitelogo.png';
+        
+        
+        
+        saJQ('#review_image').find('a').html('<img class="sa_logo" src="'+image+'" alt="Shopper Approved" />');
+        if (saJQ('#product_page').width() < 380) {
+            saJQ('.sa_logo').css('margin-top', 0);    
+        }
+        
+        if (typeof(shopperApprovedReady) == 'function') {
+            shopperApprovedReady();    
+        }
+        
+        if (sa_product_desc) {
+            if (typeof(sa_overall) != undefined && sa_overall > 0 && sa_rtype == 'product')
+                saJQ('.write_review_extra').show();
+            else
+                saJQ('.write_review_extra').not('.sa_hide_empty').show();
+           
+            saJQ('.write_review_extra').click( function () {
+                ReviewProduct(sa_productid, sa_product_desc, sa_product_image_src);    
+            });
+        }
+        
+        
+        saJQ('.sa_jump_to_reviews').click(function(e) {
+                var target = saJQ('#product_page');
+                if (typeof(jump_to_shopperapproved) == 'function') {
+                    jump_to_shopperapproved();    
+                }
+                else if (target.length) {
+                    var targetOffset = target.offset().top;
+                    saJQ('html,body')
+                    .animate({scrollTop: targetOffset - 200}, 1000);
+                    e.preventDefault();                    
+                }
+                
+                return false;
+          });
+          
+        /*saJQ('.sa_media img').click( function () {
+            saJQ('#sa_media_view').html('<img src="'+saJQ(this).prop('src')+'" />');
+            saJQ('#sa_media_background').fadeIn(300, function () {
+                saJQ('#sa_media_view').fadeIn(300);    
+            });        
+        });*/
+        
+        saJQ('#sa_media_background').click( function () {
+            saJQ('#sa_media_view').fadeOut(300, function () {
+                saJQ('#sa_media_background').fadeOut(300);    
+            });    
+        });
+        
+    }
+    
+    if (typeof(restart) === 'undefined')
+        restart = false;
+    
+    //if the jQuery object isn't available
+    if (typeof(saJQ) == 'undefined') {
+
+        if (! jQueryScriptOutputted) {
+            //only output the script once..
+            jQueryScriptOutputted = true;
+
+            //output the script (load it from google api)
+            var js = window.document.createElement('script'); 
+            js.src = "//www.shopperapproved.com/page/js/jquery.noconflict.js"; 
+            js.type = 'text/javascript'; 
+            document.getElementsByTagName("head")[0].appendChild(js);
+        }
+        setTimeout(initsaJQProductPage, 50);
+    } else {
+        
+        var sa_started = false;
+        function shopperApprovedLoad(sa_start_sort) {
+            
+            if (sa_started) return false; 
+            if (typeof(sa_html_data) != 'undefined') {
+                loadPagingEvents(sa_start_sort);
+            }
+            else {            
+                           
+                sa_started = true;
+                saOpenPage(0, sa_start_sort);  
+                saPreparePage();
+                
+                if (typeof(sa_popup_src) != 'undefined') {
+                    saLoadScript(sa_popup_src);
+                } 
+            }     
+        }
+        
+        saJQ(document).ready( function() {
+            shopperApprovedLoad(sa_start_sort);    
+        });
+        saJQ(window).load( function() {
+            shopperApprovedLoad(sa_start_sort)
+        });
+        
+        if (saJQ('#product_page').length > 0) {
+            shopperApprovedLoad(sa_start_sort); //Try it immediately.   
+        }
+        
+        
+    } 
+    
+    
+} 
+
+
+
+
+function IsLight(elem){
+    if (typeof(lightback) != 'undefined') return lightback;
+    
+    return true; 
+    //Too many are failing...
+    
+    if (saJQ(elem).length == 0) return;
+    
+    var r,b,g,hsp;
+    
+    var bgColor = "";
+    while(saJQ(elem).prop('tagName').toLowerCase() != "html") {
+        bgColor = saJQ(elem).css("background-color");
+        if(bgColor != "rgba(0, 0, 0, 0)" && bgColor != "transparent")
+            break;
+        elem = saJQ(elem).parent();
+    }
+    
+    if (bgColor == "transparent") return true;
+    
+    a = bgColor;
+
+    if (a.match(/^rgb/)) {
+        a = a.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+(?:\.\d+)?))?\)$/);
+        r = a[1];
+        b = a[2];
+        g = a[3];
+    } else {
+        a = +("0x" + a.slice(1).replace( // thanks to jed : http://gist.github.com/983661
+        a.length < 5 && /./g, '$&$&'
+        )
+        );
+        r = a >> 16;
+        b = a >> 8 & 255;
+        g = a & 255;
+    }
+    hsp = Math.sqrt( // HSP equation from http://alienryderflex.com/hsp.html
+        0.299 * (r * r) +
+        0.587 * (g * g) +
+        0.114 * (b * b)
+        );
+    return (hsp>127.5);
+}
+
+
+
+function saOpenPage(page, sort)
+{    
+    var html = '';
+    var start = page * sa_products_count;
+    
+    for (var i=0; i<sa_products_count; i++) {
+        var index = start+i;
+        if (index >= sa_foundrows || index >= Object.keys(sa_product_reviews[sort]).length) break;
+        
+        var review = sa_product_reviews[sort][index];
+        if (review['state'] && review['country']) {
+            var location = '('+review['state']+', '+review['country']+')';
+        }
+        else if (review['state']) {
+            var location = '('+review['state']+')';
+        }
+        else if (review['country']) {
+            var location = '('+review['country']+')';
+        }
+        else {
+            var location = '';
+        }
+            
+        html += '<div class="product_review">';
+        html += '<div class="main-questions">';
+        if (typeof(review['product']) != 'undefined' && review['product'] != '')
+            html += '<div class="rproduct">'+review['product']+'</div>';
+        
+        html += '<div class="rating"><div class="stars">'; 
+        
+        html += saStars(review['rating']);
+        
+        html += '</div><div class="images">';
+        if (review['verified']) {        
+            html += '<div class="verified">Verified Buyer</div>';
+        }
+        if (review['recommend']) {
+            html += '<div class="recommend">' + review['recommend'] + '</div>';
+        }
+        
+        html += '</div></div>';
+        if (review['heading'] != '')
+            html += '<div class="rheading">'+review['heading']+'</div>';
+        html += '<div class="info">'+formatDate(review['date'], sa_date_format)+' by '
+                + '<span class="name">'+review['name']+'</span>';
+                
+        if (review['info']) {
+            html += '<span class="extrainfo">';
+            for (var infoi=0; infoi<review['info'].length; infoi++) {
+                html += ', ' + review['info'][infoi];
+            }
+            html += '</span>';
+        }
+                
+        html += ' ' + location + '</div>'
+            + '<div class="comments">&ldquo;'+review['comments']+'&rdquo;</div>';
+        
+        html += '</div>';
+            
+        if (review['custom']) {
+            html += '<div class="custom-questions">';
+            for (var question in review['custom']) {
+                html += '<div class="custom-question">' + question + '</div><div class="custom-answer">' + review['custom'][question] + '</div>';
+            }
+            html += '</div>';
+        }  
+        
+        if (review['media']) {
+            html += '<div class="sa_media">';
+            for (var j=0, end = review['media'].length; j<end; j++) {
+                html += '<img src="//www.shopperapproved.com/widgets/product-image.php?mediaid='+review['media'][j]+'" />';
+            }
+            html += '</div>';
+        }
+        
+        if (review['resolution']) {
+            html += '<div class="resolution-attempt">'+sa_domain+' tried to help this customer via the Shopper Approved '
+                + ' Customer Resolution Center, but the customer did not respond to the assistance provided.</div>';
+        }  
+        if (review['response']) {
+            html += '<div class="sa_response_header">Response from '+sa_domain+':</div>'
+                + '<div class="sa_response">'+review['response']+'</div>';
+        }
+        html += '<div class="end_placeholder"></div>';  
+             
+        html += '</div>';   
+    }
+    
+    html += '<div class="paging">'
+    
+    if (sa_foundrows > sa_products_count)
+    {
+    
+        if (page > 1) {
+            j = page-1;
+            html += '<input type="button" class="sa_page arrow" value=" &#9666;    '+j+'" />';
+        }
+                
+        for (var j=page; j<page+3; j++) {
+            var activepage = (page == j-1) ? 'active' : '';
+            if (j > 0 && (j-1) * sa_products_count < sa_foundrows)
+                html += '<input type="button" class="sa_page '+activepage+'" value="'+j+'" />';
+        } 
+        if (page == 0 && 2 * sa_products_count < sa_foundrows)
+            html += '<input type="button" class="sa_page" value="3" />'; 
+        if ((page+2) * sa_products_count < sa_foundrows) {
+            //j = Math.ceil(sa_foundrows / sa_products_count);
+            j = page+3;
+            html += '<input type="button" class="sa_page arrow" value=" &#9656;     '+j+'" />';    
+        }
+        
+        
+        
+    }     
+    
+    var sortoptions = { 'high':'High to Low', 'new':'Newest to Oldest', 'old':'Oldest to Newest', 'low':'Lowest to Highest'};
+    if (sa_rtype == 'merchant' && (typeof(sa_hasfeatured) == null || sa_hasfeatured)) {
+        sortoptions['featured'] = 'Featured Reviews';
+    }
+    html += '<select id="sa_sort"><option value="" disabled style="display: none;">Sort Reviews</option>'; //So it doesn't get caught in yahoo validation
+    for (var r in sortoptions) {
+        var s = (r == sort) ? 'selected="selected"' : '';
+        html += '<option value="'+r+'" '+s+'>'+sortoptions[r]+'</option>';
+    }
+    html += '</select>';    
+    
+    
+    html += '</div>';
+    
+    var rnd = Math.random();
+    if (typeof(first) != 'undefined') {
+        var sa_reviews = saJQ('.sa_review');
+    }
+    else {
+         var sa_reviews = saJQ('.shopperapproved_widget .sa_review');
+         if (sa_reviews.length == 0)
+            sa_reviews = saJQ('.sa_review'); 
+         else
+            sa_reviews = saJQ(sa_reviews).not('.sa_static .sa_review');
+    } 
+    
+    saJQ('#product_page').html(html).animate({ opacity: 1 },300, function () {
+        
+        loadPagingEvents(sort);
+        
+    }); 
+        
+}
+
+if (document.URL.indexOf('shopperapproved_watch') > 0 || sa_getCookie('shopperapproved_watch') == 'debug') {
+    sa_setCookie('shopperapproved_watch', 'debug');
+    saLoadScript('//www.shopperapproved.com/widgets/watch-page.php?siteid='+sa_siteid+'&productid='+sa_productid);
+}
+else if (document.URL.indexOf('shopperapproved_staging') > 0 || sa_getCookie('shopperapproved_staging') == 'debug') {
+    sa_setCookie('shopperapproved_staging', 'debug');
+    saLoadScript('//staging.shopperapproved.com/widgets/watch-page.php?siteid='+sa_siteid+'&productid='+sa_productid);
+}
+
+initsaJQProductPage();

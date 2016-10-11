@@ -1,0 +1,43 @@
+A.example1
+{
+    BACKGROUND-COLOR: black
+}
+A:link	{
+text-decoration:normal;
+cursor:hand;
+	}
+A:hover	{
+text-decoration:underline;
+cursor:hand;
+	}
+A:active	{
+text-decoration:normal;
+cursor:hand;
+	}
+A:visited	{
+text-decoration:normal;
+cursor:hand;
+	}
+.style24 {font-family: Tahoma; font-size: 11px; color: #52433e; font-weight: bold; }
+
+.nav {
+font-family: Verdana; 
+font-size: 10px; 
+color: #FFFFFF;
+text-decoration:underline; 
+	}
+	
+	
+H1 { text-decoration:underline; color:#000000; font-family:Verdana; font-weight:bold; font-size:20px; }
+H2 { text-decoration:underline; color:#000000; font-family:Verdana; font-weight:bold; font-size:18px; }
+H3 { text-decoration:underline; color:#000000; font-family:Verdana; font-weight:bold; font-size:16px; }
+H4 { text-decoration:underline; color:#000000; font-family:Verdana; font-weight:bold; font-size:14px; }
+
+.text {text-decoration:none; color:#000000; }
+
+.seoLinks {
+font-family: Verdana; 
+font-size: 10px; 
+color: #000000;
+text-decoration:underline;
+}
