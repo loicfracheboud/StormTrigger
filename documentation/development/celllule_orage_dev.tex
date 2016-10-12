@@ -86,22 +86,22 @@
   A plusieurs reprises des références sont faites au datasheets, ce sont les documents officiels que les fabricants fournissent avec leurs composants contenant toutes les informations techniques nécessaires à leur mise en service. Vous pouvez les retrouver dans le répertoire approprié de la documentation.
 
  \paragraph{Alimentation}
- L'alimentation en énergie du système est importante. Nous avons choisi de travailler avec une batterie LiFePO4 au format AA (ou une pile AA, l'idée étant de pouvoir remplacer facilement l'alimentation sur le terrain). Pour pouvoir travailler efficacement avec les ampli-ops il faut une tension plus élevée que celle de batterie (soit 3.3 [V] (ou 1.5 [V] pour une pile AA). J'ai ajouté au schéma un convertisseur DC-DC qui permet de travailler le plus efficacement possible avec une source dont la tension varie au fil de sa décharge. Il comporte également le circuit de charge de la batterie, les informations complètes à ce sujet sont données dans le chapitre correspondant.\\
- En alimentant le circuit avec la batterie choisie \footnote{Voir LiFePO4 dans le dossier "divers" de la documentation} dont la capacité est de 1.1 [Ah], on obtient une autonomie de XX [h] en activité (donc prêt à déclencher au moindre éclair) ou de XX [h] en déclenchement (c'est à dire retour utilisateur - LED et buzzer - actifs et déclencheur actif).\\
- Pour la régulation de l'alimentation du circuit, j'ai choisi le MAX857ESA+ qui permet de travailler dès 0.8 [V] et qui assure un courant de sortie de 500 [mA]. \\
- Pour définir la tension de sortie voulue, soit 6 [V], il faut dimensionner un pont diviseur qui donne une référence au convertisseur. Le calcul est le suivant :
+ L'alimentation en énergie du système est importante. Le cahier des charges demande de travailler avec une batterie au format AA (ou une pile AA, l'idée étant de pouvoir remplacer facilement l'alimentation sur le terrain). Le choix c'est donc porté sur une batterie LiFePO4 (3.3 [V] / 1.1 [Ah]).
+ \\Pour pouvoir travailler efficacement avec les ampli-ops il faut une tension plus élevée que celle de batterie (soit 3.3 [V] (ou 1.5 [V] pour une pile AA). Le schéma comporte un convertisseur DC-DC qui permet de travailler le plus efficacement possible avec une source dont la tension varie au fil de sa décharge.
+ \\Pour la régulation de l'alimentation du circuit, le MAX857ESA+ permet de travailler dès 0.8 [V] et assure un courant de sortie de 500 [mA].
+ \\Pour définir la tension de sortie voulue, soit 6 [V], il faut dimensionner un pont diviseur qui donne une référence au convertisseur. Le calcul est le suivant :
 \begin{center}
  $ R14 = R15*(\frac{Vout}{Vref}-1) = \num{10e3}*(\frac{6}{1.25}-1) = 38 [k\ohm]$
 \end{center} 
 R14 est définie à 10 [k\ohm]\footnote{Selon le datasheet du MAX857ESA+} et R15 vaudra 38.3 [k\ohm].\\
-Les batteries de technologie LiFePO4 sont considérées comme déchargées au-dessous de 2.8 [V] \footnote{Selon la page Wikipédia correspondante ainsi que divers sites spécialisés}, ainsi nous sommes en permanence dans la plage de fonctionnement du convertisseur.\\
-Le circuit possède une unité de contrôle de la batterie. Il suffit de monitorer la tension de la batterie sur la pin LBI (Low Battery Input) et le MAX857 contrôle la pin LBO (Low Battery Output). Cette dernière est tirée au GND lorsque la batterie atteint un niveau de charge inférieur à la référence.\\
-Les autres composants se rattachant au convertisseur sont définis par le datasheet.\\
-Afin de fournir le 3[V] de référence, un régulateur LDO ({\itshape(Low Dropout Output)} à sortie fixe sera employé. Le modèle choisi est le NCP4586, il permet de fournir 3 [V] et 150 [mA] ce qui satisfait pleinement le fonctionnement voulu.\\
+Les batteries de technologie LiFePO4 sont considérées comme déchargées au-dessous de 3 [V] (il s'agit de la plage fonctionnement standard, la limite de destruction des cellules est de 2.8 [V]) \footnote{Selon la page Wikipédia correspondante ainsi que divers sites spécialisés}, ainsi nous sommes en permanence dans la plage de fonctionnement du convertisseur.\\
+Le circuit possède une unité de contrôle de la batterie. Il suffit de monitorer la tension de la batterie sur la pin LBI {\itshape(Low Battery Input)} et le MAX857 contrôle la pin LBO {\itshape(Low Battery Output)}. Cette dernière est tirée au GND lorsque la batterie atteint un niveau de charge inférieur à la référence.
+\\Ainsi le circuit allume une LED d'indication de batterie faible, il est alors nécessaire de charger/changer la batterie.
+\\Les autres composants se rattachant au convertisseur sont définis par le datasheet.\\
+Afin de fournir le 3[V] de référence, un régulateur LDO {\itshape(Low Dropout Output)} à sortie fixe sera employé. Le modèle choisi est le NCP4586, il permet de fournir 3 [V] et 150 [mA] ce qui satisfait pleinement le fonctionnement voulu.\\
 Les valeurs des composants sont données par le datasheet.
 
-  \paragraph{Chargeur de batterie}
-  
+  \paragraph{Chargeur de batterie}  
 Afin d'avoir un système fonctionnant sur batterie et polyvalent, une charge via micro-USB type B est adaptée (c'est le connecteur le plus utilisé actuellement pour les appareils mobiles tels que smartphones, action-cams, etc). La norme USB définit que le périphérique peut consommer 500 [mA] \footnote{\url{https://fr.wikipedia.org/wiki/Universal_Serial_Bus#Alimentation_.C3.A9lectrique}}. 
 \\Le choix du chargeur s'est donc porté sur le MCP73831, il est compact, peu cher, économe et simple d'application. Il offre une charge adaptée à la technologie de batterie choisie ainsi qu'un retour utilisateur sur l'état de la charge.
 
@@ -156,9 +156,9 @@ L'utilisateur a le choix entre la référence automatique ou la référence manu
 Il y aura donc trois résistances définissant ces références : A FINIR
 
 \paragraph{Comparateur}
-Ce bloc va comparer la sortie du filtre avec la référence définie par l'utilisateur (sélection entre auto ou manuel) afin de déclencher au final l'appareil photo. \\
-Il s'agit d'un montage simple, sans hysthérèse. Ce choix est fait pour augmenter au mieux la réactivité du système. Dès qu'une variation est repérée, l'étage suivant génère une pulse suffisament longue pour l'appareil. Dès lors, si le comparateur déclenche à nouveau, ce sera ignoré (et de toute façon l'appareil est déjà en train de capturer). \\
-Sur l'entrée de référence il y a un switch de sélection entre les deux références.
+Ce bloc va comparer la sortie du filtre avec la référence définie par l'utilisateur (sélection entre auto ou manuel) afin de déclencher au final l'appareil photo.
+\\Il s'agit d'un montage simple, sans hysthérèse. Ce choix est fait pour augmenter au mieux la réactivité du système. Dès qu'une variation est repérée, l'étage suivant génère une pulse suffisament longue pour l'appareil. Dès lors, si le comparateur déclenche à nouveau, ce sera ignoré (et de toute façon l'appareil est déjà en train de capturer). 
+\\Sur l'entrée de référence il y a un switch de sélection entre les deux références.
 
 \paragraph{Timer}
 Ce bloc va créer la pulse de déclenchement de l'appareil. \\
@@ -198,6 +198,9 @@ Le buzzer choisi est le modèle KPEG203. Il suffit de l'alimenter entre 3 et 20 
 \paragraph{Ergonomie}
 Afin de faciliter les réglages et augmenter l'ergonomie du système, tous les réglages sont déportés de la carte sur un bus permettant de le placer à un endroit facilement accessible du boitier. Ainsi pas besoin de démonter le boitier pour modifier un paramètre.\\
 Pour optimiser l'évolutivité du système, la sortie du déclencheur, les alimentations et les contrôles du retour utilisateur sont également déportés sur le bus. L'idée étant de pouvoir brancher une autre carte et de profiter des signaux générés par le détecteur.
+
+\paragraph{Autonomie}
+En alimentant le circuit avec la batterie choisie \footnote{Voir LiFePO4 dans le dossier "divers" de la documentation} dont la capacité est de 1.1 [Ah], on obtient une autonomie de XX [h] en activité (donc prêt à déclencher au moindre éclair) ou de XX [h] en déclenchement (c'est à dire retour utilisateur - LED et buzzer - actifs et déclencheur actif).
 
  \pagebreak
  \section{Conclusion}
