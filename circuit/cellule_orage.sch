@@ -1750,4 +1750,6 @@ Text Notes 15000 2900 0    60   ~ 0
 Max 500 [mA]
 Text Notes 15150 3200 0    60   ~ 0
 Max 150 [mA]
+Text GLabel 3750 10700 2    60   Input ~ 0
+circuit_en
 $EndSCHEMATC
