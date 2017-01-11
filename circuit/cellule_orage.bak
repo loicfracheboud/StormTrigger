@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:cellule_orage-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -32,7 +33,6 @@ LIBS:maxim_integrated
 LIBS:on_semiconductor
 LIBS:audio_divers
 LIBS:microchip_divers
-LIBS:nxp_semiconductor
 LIBS:cellule_orage-cache
 EELAYER 25 0
 EELAYER END
@@ -799,7 +799,7 @@ U 1 1 57875EAE
 P 9600 7550
 F 0 "L1" H 9630 7590 50  0000 L CNN
 F 1 "47uH" H 9630 7510 50  0000 L CNN
-F 2 "" H 9600 7550 50  0001 C CNN
+F 2 "Choke_SMD:Choke_SMD_Wuerth-WE-PD2-Typ-L" H 9600 7550 50  0001 C CNN
 F 3 "" H 9600 7550 50  0000 C CNN
 	1    9600 7550
 	1    0    0    -1  
@@ -810,7 +810,7 @@ U 1 1 57875FBD
 P 9800 7750
 F 0 "D1" H 9850 7700 50  0000 L CNN
 F 1 "1N5817" H 9520 7670 50  0000 L CNN
-F 2 "" V 9800 7750 50  0001 C CNN
+F 2 "Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10" V 9800 7750 50  0001 C CNN
 F 3 "" V 9800 7750 50  0000 C CNN
 	1    9800 7750
 	-1   0    0    1   
@@ -1059,7 +1059,7 @@ U 1 1 57ACA2D6
 P 12750 2700
 F 0 "P10" H 12750 2900 50  0000 C CNN
 F 1 "Buzzer ON/OFF" V 12850 2700 50  0000 C CNN
-F 2 "" H 12750 2700 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03" H 12750 2700 50  0001 C CNN
 F 3 "" H 12750 2700 50  0000 C CNN
 	1    12750 2700
 	-1   0    0    1   
@@ -1117,7 +1117,7 @@ U 1 1 57CB3AAC
 P 1200 1650
 F 0 "P2" H 1200 1800 50  0000 C CNN
 F 1 "Phototransistor BPW85" H 1200 2000 50  0000 C CNN
-F 2 "" H 1200 1650 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Angled_1x02" H 1200 1650 50  0001 C CNN
 F 3 "" H 1200 1650 50  0000 C CNN
 	1    1200 1650
 	-1   0    0    1   
@@ -1185,7 +1185,7 @@ U 1 1 57CF0FDA
 P 6250 2650
 F 0 "P7" H 6250 2850 50  0000 C CNN
 F 1 "AUTO/USER" V 6350 2650 50  0000 C CNN
-F 2 "" H 6250 2650 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03" H 6250 2650 50  0001 C CNN
 F 3 "" H 6250 2650 50  0000 C CNN
 	1    6250 2650
 	0    -1   -1   0   
@@ -1228,7 +1228,7 @@ U 1 1 57CF9A01
 P 14400 3450
 F 0 "P11" H 14400 3850 50  0000 C CNN
 F 1 "OUTPUT" V 14500 3450 50  0000 C CNN
-F 2 "" H 14400 3450 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x07" H 14400 3450 50  0001 C CNN
 F 3 "" H 14400 3450 50  0000 C CNN
 	1    14400 3450
 	-1   0    0    1   
@@ -1290,7 +1290,7 @@ U 1 1 57D0F8AA
 P 1200 2300
 F 0 "P3" H 1200 2450 50  0000 C CNN
 F 1 "Phototransistor BPW85" H 1200 2650 50  0000 C CNN
-F 2 "" H 1200 2300 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Angled_1x02" H 1200 2300 50  0001 C CNN
 F 3 "" H 1200 2300 50  0000 C CNN
 	1    1200 2300
 	-1   0    0    1   
@@ -1314,7 +1314,7 @@ U 1 1 57D0F98F
 P 1200 2950
 F 0 "P4" H 1200 3100 50  0000 C CNN
 F 1 "Phototransistor BPW85" H 1200 3300 50  0000 C CNN
-F 2 "" H 1200 2950 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Angled_1x02" H 1200 2950 50  0001 C CNN
 F 3 "" H 1200 2950 50  0000 C CNN
 	1    1200 2950
 	-1   0    0    1   
@@ -1383,17 +1383,6 @@ F 2 "" H 2700 7650 60  0001 C CNN
 F 3 "" H 2700 7650 60  0001 C CNN
 	1    2700 7650
 	1    0    0    -1  
-$EndComp
-$Comp
-L USB_OTG P1
-U 1 1 57F1F609
-P 800 7750
-F 0 "P1" H 1125 7625 50  0000 C CNN
-F 1 "USB_OTG" H 800 7950 50  0000 C CNN
-F 2 "" V 750 7650 50  0001 C CNN
-F 3 "" V 750 7650 50  0000 C CNN
-	1    800  7750
-	0    -1   1    0   
 $EndComp
 Text GLabel 4000 7550 2    60   Input ~ 0
 Vbat
@@ -1851,7 +1840,7 @@ U 1 1 57ACAB1E
 P 10900 2850
 F 0 "P8" H 10900 3050 50  0000 C CNN
 F 1 "LED ON/OFF" V 11000 2850 50  0000 C CNN
-F 2 "" H 10900 2850 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03" H 10900 2850 50  0001 C CNN
 F 3 "" H 10900 2850 50  0000 C CNN
 	1    10900 2850
 	-1   0    0    1   
@@ -1953,7 +1942,7 @@ F 3 "" V 11350 3350 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L POT R4
+L POT-RESCUE-cellule_orage R4
 U 1 1 5837CF62
 P 3000 2250
 F 0 "R4" H 3000 2170 50  0000 C CNN
@@ -1964,12 +1953,12 @@ F 3 "" H 3000 2250 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L POT R9
+L POT-RESCUE-cellule_orage R9
 U 1 1 5837DA66
 P 7150 3150
 F 0 "R9" H 7150 3070 50  0000 C CNN
 F 1 "50k" H 7150 3150 50  0000 C CNN
-F 2 "" H 7150 3150 50  0001 C CNN
+F 2 "Potentiometers:Potentiometer_WirePads_Small" H 7150 3150 50  0001 C CNN
 F 3 "" H 7150 3150 50  0000 C CNN
 	1    7150 3150
 	0    -1   -1   0   
@@ -1987,4 +1976,15 @@ F2 "+6v" O R 4150 6100 60
 F3 "+3V" O R 4150 6200 60 
 F4 "GND" O R 4150 6300 60 
 $EndSheet
+$Comp
+L USB_OTG P?
+U 1 1 5873D7DD
+P 800 7750
+F 0 "P?" H 1125 7625 50  0000 C CNN
+F 1 "USB_OTG" H 800 7950 50  0000 C CNN
+F 2 "" V 750 7650 50  0000 C CNN
+F 3 "" V 750 7650 50  0000 C CNN
+	1    800  7750
+	0    -1   1    0   
+$EndComp
 $EndSCHEMATC

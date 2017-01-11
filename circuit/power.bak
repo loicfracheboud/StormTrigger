@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:cellule_orage-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -32,7 +33,6 @@ LIBS:maxim_integrated
 LIBS:on_semiconductor
 LIBS:audio_divers
 LIBS:microchip_divers
-LIBS:nxp_semiconductor
 LIBS:cellule_orage-cache
 EELAYER 25 0
 EELAYER END
