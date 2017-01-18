@@ -1,4 +1,4 @@
-update=09.01.2017 17:09:43
+update=11.01.2017 10:52:41
 version=1
 last_client=kicad
 [pcbnew]
@@ -73,4 +73,3 @@ LibName31=C:/Users/loicf/Documents/GitHub/KiCad_lib/maxim_integrated
 LibName32=C:/Users/loicf/Documents/GitHub/KiCad_lib/on_semiconductor
 LibName33=C:/Users/loicf/Documents/GitHub/KiCad_lib/audio_divers
 LibName34=microchip_divers
-LibName35=nxp_semiconductor
